@@ -45,9 +45,14 @@ export const rendre = () => `
           .map((ch) => `<p class="lien-croise"><a class="lien-fleche" href="chroniques.html#${esc(ch.id)}">La chronique : ${esc(ch.titre)}</a></p>`)
           .join("")}
 
-        <div class="lecteur" data-suno="${esc(c.sunoId || "")}" data-titre="${esc(c.titre)}">
+        <div class="lecteur">
+          ${
+            c.sunoId
+              ? `<iframe src="https://suno.com/embed/${encodeURIComponent(c.sunoId)}" title="Lecteur Suno : ${esc(c.titre)}"
+              loading="lazy" allow="autoplay; encrypted-media"></iframe>`
+              : ""
+          }
           <div class="actions">
-            ${c.sunoId ? `<button class="bouton" type="button" data-charger>${icones.lecture}Écouter ici</button>` : ""}
             ${c.lien ? `<a class="lien-fleche" href="${esc(c.lien)}" target="_blank" rel="noopener">Écouter sur Suno</a>` : ""}
           </div>
         </div>
@@ -74,26 +79,4 @@ export const rendre = () => `
 
 export const page = { cle: "repertoire", titre: "Le Répertoire" };
 
-export function apres() {
-
-  // Le lecteur Suno n'est chargé qu'à la demande : la page reste légère et
-  // rien n'est envoyé à Suno tant que le visiteur n'a pas cliqué.
-  document.querySelectorAll(".lecteur [data-charger]").forEach((bouton) => {
-    bouton.addEventListener("click", () => {
-      const bloc = bouton.closest(".lecteur");
-      const iframe = document.createElement("iframe");
-      iframe.src = `https://suno.com/embed/${encodeURIComponent(bloc.dataset.suno)}`;
-      iframe.title = `Lecteur Suno : ${bloc.dataset.titre}`;
-      iframe.allow = "autoplay; encrypted-media";
-      iframe.loading = "lazy";
-      bloc.prepend(iframe);
-      bouton.remove();
-      iframe.focus();
-    });
-  });
-}
-
-if (typeof document !== "undefined") {
-  monterPage({ ...page, contenu: rendre() });
-  apres();
-}
+if (typeof document !== "undefined") monterPage({ ...page, contenu: rendre() });
