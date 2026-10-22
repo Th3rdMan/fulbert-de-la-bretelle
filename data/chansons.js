@@ -20,11 +20,36 @@ export default [
   {
     id: "pleurez-pauvres-petunias",
     titre: "Pleurez, pauvres pétunias",
-    contexte: `Une complainte pour un parterre de pétunias et une rue emportés par des débris tombés du ciel, un jour de semaine.`,
+    contexte: `Le 13 octobre, à midi, le Capitaine Sysson a tiré quatre ogives nucléaires sur Structural. La première a rasé une rue, la deuxième un champ de rien, la troisième s'est perdue en chemin, la quatrième a fauché un parterre de fleurs. Bilan humain : personne. Madame Karen Vanderbilt, bourgmestre de Structural, a crié au crime de guerre sur la place publique. J'ai fait remarquer que la population civile n'avait même pas renversé son thé. Elle m'a reproché mon manque d'humanité.
+
+Je lui ai répondu en musique, le soir même, debout sur une table du Rhum à ranger, un brassard de crêpe noir au bras. Les dons sont allés à Structural. Monsieur le Baron veillait sur le chapeau, un minuscule nœud noir autour du cou.`,
+    dedicataire: "Les victimes de Structural, et Madame la Bourgmestre",
     style: "Troubadour, gigue baroque",
     sunoId: "a85c0c3d-8be4-432d-955f-c1e3dfbb59bd",
     lien: "https://suno.com/song/a85c0c3d-8be4-432d-955f-c1e3dfbb59bd",
-    paroles: ``,
+    paroles: `À Structural, un mardi midi,
+Quatre ogives tombèrent du paradis :
+L'une rasa la rue, l'autre un champ de rien,
+La troisième se perdit en chemin,
+Et la dernière, d'un geste meurtrier,
+Faucha les fleurs d'un parterre entier.
+
+[Refrain]
+Pleurez, pleurez, pauvres pétunias,
+Fauchés en fleur, sans un dernier éclat !
+Pleurez la rue qui menait quelque part,
+Et ce missile égaré dans le brouillard !
+
+Depuis ce jour, la ville a bien changé :
+On vit la nuit, on fuit le soleil d'été,
+Et le matin, dans chaque basse-cour,
+Les Confédérés pondent leurs œufs du jour.
+
+[Refrain]
+Pleurez, pleurez, pauvres pétunias,
+Le Baron, lui, ne vous pleurera pas !
+Il garde l'étang, le bec et l'œil sévère :
+Qu'aucun mutant ne ponde sur sa rivière !`,
   },
   {
     id: "la-termitiere",
