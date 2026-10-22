@@ -1,6 +1,8 @@
-// Le Répertoire. Une entrée par chanson ; l'ordre du tableau est l'ordre
-// d'affichage, la première est mise en avant sur l'accueil comme « dernière
-// chanson ». Ajoute donc les nouvelles en tête.
+// Le Répertoire. Une entrée par chanson, dans l'ordre de sortie : la plus
+// ancienne en premier. Ajoute donc les nouvelles à la fin du tableau.
+// Le Répertoire les affiche de la plus récente à la plus ancienne, et
+// l'accueil met la dernière du tableau en avant comme « dernière chanson ».
+// Le numéro affiché (I, II, III…) est le rang de sortie.
 //
 // Champs :
 //   id          identifiant unique, sans espace

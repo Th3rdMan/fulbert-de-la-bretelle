@@ -31,9 +31,11 @@ export const rendre = () => `
 
   <div>
   ${chansons
+    .map((c, i) => ({ ...c, rang: i + 1 }))
+    .reverse()
     .map(
-      (c, i) => `<article class="chanson apparait" id="${esc(c.id)}" aria-labelledby="titre-${esc(c.id)}">
-      <div class="chanson-numero" aria-hidden="true">${romain(i + 1)}</div>
+      (c) => `<article class="chanson apparait" id="${esc(c.id)}" aria-labelledby="titre-${esc(c.id)}">
+      <div class="chanson-numero" aria-hidden="true">${romain(c.rang)}</div>
       <div>
         <h2 id="titre-${esc(c.id)}">${esc(c.titre)}</h2>
         <p class="meta">${[c.style, c.dedicataire && `Pour ${c.dedicataire}`].filter(Boolean).map((m) => `<span>${esc(m)}</span>`).join("")}</p>

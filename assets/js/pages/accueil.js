@@ -12,7 +12,7 @@ const resume = (texte, max = 150) => {
 
 const total = ceintures.length;
 const nouvelles = chroniques.slice(-3).reverse();
-const derniere = chansons[0];
+const derniere = chansons[chansons.length - 1];
 
 export const rendre = () => `
 <div class="conteneur">
