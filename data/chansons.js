@@ -18,6 +18,15 @@
 
 export default [
   {
+    id: "pleurez-pauvres-petunias",
+    titre: "Pleurez, pauvres pétunias",
+    contexte: `Une complainte pour un parterre de pétunias et une rue emportés par des débris tombés du ciel, un jour de semaine.`,
+    style: "Troubadour, gigue baroque",
+    sunoId: "a85c0c3d-8be4-432d-955f-c1e3dfbb59bd",
+    lien: "https://suno.com/song/a85c0c3d-8be4-432d-955f-c1e3dfbb59bd",
+    paroles: ``,
+  },
+  {
     id: "la-termitiere",
     titre: "La Termitière",
     contexte: `Écrite au retour de la Grande Termitière, pour mes deux compagnons de cordée et pour tous ceux qui croient qu'on redescend d'une ascension avec plus que ce qu'on avait en montant.
