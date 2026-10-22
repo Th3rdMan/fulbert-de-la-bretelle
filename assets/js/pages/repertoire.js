@@ -45,17 +45,16 @@ export const rendre = () => `
           .map((ch) => `<p class="lien-croise"><a class="lien-fleche" href="chroniques.html#${esc(ch.id)}">La chronique : ${esc(ch.titre)}</a></p>`)
           .join("")}
 
-        <div class="lecteur">
-          ${
-            c.sunoId
-              ? `<iframe src="https://suno.com/embed/${encodeURIComponent(c.sunoId)}" title="Lecteur Suno : ${esc(c.titre)}"
-              loading="lazy" allow="autoplay; encrypted-media"></iframe>`
+        ${
+          c.sunoId
+            ? `<div class="lecteur">
+          <iframe src="https://suno.com/embed/${encodeURIComponent(c.sunoId)}" title="Lecteur Suno : ${esc(c.titre)}"
+            loading="lazy" allow="autoplay; encrypted-media"></iframe>
+        </div>`
+            : c.lien
+              ? `<p class="lecteur"><a class="lien-fleche" href="${esc(c.lien)}" target="_blank" rel="noopener">Écouter sur Suno</a></p>`
               : ""
-          }
-          <div class="actions">
-            ${c.lien ? `<a class="lien-fleche" href="${esc(c.lien)}" target="_blank" rel="noopener">Écouter sur Suno</a>` : ""}
-          </div>
-        </div>
+        }
 
         <details class="paroles">
           <summary>${icones.chevron}Paroles complètes</summary>
