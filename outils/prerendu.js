@@ -8,13 +8,47 @@
 // script n'a pas été relancé. Sur GitHub, une Action le relance à chaque
 // modification de data/ (voir .github/workflows/prerendu.yml).
 
-import { writeFile } from "node:fs/promises";
+import { readFile, readdir, writeFile } from "node:fs/promises";
+import { createHash } from "node:crypto";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { entete, pied, esc, titreDocument } from "../assets/js/app.js";
 import site from "../data/site.js";
 
 const racine = join(dirname(fileURLToPath(import.meta.url)), "..");
+
+// Empreinte de chaque module et de la feuille de style, ajoutée en ?v=… aux
+// adresses. GitHub Pages laisse les navigateurs garder les fichiers dix
+// minutes en cache : sans empreinte, une page fraîche pouvait tourner avec
+// un ancien module (ou l'inverse) juste après une mise à jour.
+async function empreintes() {
+  const fichiers = ["assets/css/site.css"];
+  for (const dossier of ["assets/js", "assets/js/pages", "data"]) {
+    for (const nom of await readdir(join(racine, dossier))) {
+      if (nom.endsWith(".js")) fichiers.push(`${dossier}/${nom}`);
+    }
+  }
+  const table = {};
+  for (const f of fichiers) {
+    const contenu = await readFile(join(racine, f));
+    table[f] = createHash("sha256").update(contenu).digest("hex").slice(0, 10);
+  }
+  return table;
+}
+
+const versions = await empreintes();
+const versionne = (chemin) => `${chemin}?v=${versions[chemin]}`;
+const carteImports = JSON.stringify(
+  {
+    imports: Object.fromEntries(
+      Object.keys(versions)
+        .filter((f) => f.endsWith(".js"))
+        .map((f) => [`./${f}`, `./${versionne(f)}`])
+    ),
+  },
+  null,
+  0
+);
 
 const FICHIERS = {
   accueil: "index.html",
@@ -62,8 +96,9 @@ function document({ module, fichier, page, contenu }) {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Cinzel:wght@500;600;700&display=swap">
-<link rel="stylesheet" href="assets/css/site.css">
-<script type="module" src="assets/js/pages/${module}.js"></script>
+<link rel="stylesheet" href="${versionne("assets/css/site.css")}">
+<script type="importmap">${carteImports}</script>
+<script type="module" src="${versionne(`assets/js/pages/${module}.js`)}"></script>
 </head>
 <body>
 ${entete(page.cle)}
