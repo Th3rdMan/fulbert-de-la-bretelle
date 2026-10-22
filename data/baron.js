@@ -37,7 +37,7 @@ On dit en ville que c'est lui qui décide. C'est faux. Je décide, puis il me mo
     },
     galerie: {
       section: "La Galerie",
-      texte: "Mon portrait est le seul qui soit réussi. Le modèle y est pour beaucoup.",
+      texte: "On m'a retiré de la galerie. Je n'en attendais pas moins.",
     },
   },
 };

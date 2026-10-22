@@ -323,8 +323,8 @@ main { display: block; padding-block: clamp(2rem, 5vw, 4.5rem) clamp(3rem, 7vw, 
 .avis-baron .surtitre { margin: 0 0 .25rem; font-size: .7rem; }
 .avis-baron blockquote { margin: 0; font-style: italic; color: var(--ink); font-size: 1.05em; }
 .avis-baron blockquote p { margin: 0; }
-.avis-baron blockquote p::before { content: "« "; }
-.avis-baron blockquote p::after { content: " »"; }
+.avis-baron blockquote p::before { content: "«\00a0"; }
+.avis-baron blockquote p::after { content: "\00a0»"; }
 
 /* --- Accueil ------------------------------------------------------------- */
 
@@ -730,3 +730,5 @@ html:not(.js) .bouton-theme, html:not(.js) .bouton-menu { display: none; }
   html:not(.js) .nav-principale ul { flex-direction: row; padding: 0 0 .5rem; }
   html:not(.js) .nav-principale a { border-bottom: 0; padding: .4rem .6rem; font-size: .75rem; }
 }
+
+.galerie-section { margin-bottom: 0; }
