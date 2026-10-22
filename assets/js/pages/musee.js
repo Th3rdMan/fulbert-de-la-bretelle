@@ -48,7 +48,7 @@ const accueil =
     : `<p class="chapeau">Le Musée de la Ceinture conserve et présente les ceintures confisquées par l'Ordre de la Ceinture
        au terme d'un assaut loyal. ${total} pièce${total > 1 ? "s sont exposées" : " est exposée"} à ce jour.</p>`;
 
-const contenu = `
+export const rendre = () => `
 <div class="conteneur">
   <header class="musee-accueil apparait">
     <p class="surtitre">Castel Bretelle · Aile des collections</p>
@@ -78,4 +78,6 @@ const contenu = `
   ${avisBaron("musee")}
 </div>`;
 
-monterPage({ cle: "musee", titre: "Le Musée de la Ceinture", contenu });
+export const page = { cle: "musee", titre: "Le Musée de la Ceinture" };
+
+if (typeof document !== "undefined") monterPage({ ...page, contenu: rendre() });

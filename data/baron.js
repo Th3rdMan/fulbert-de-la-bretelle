@@ -4,6 +4,8 @@
 // encart sur la page concernée et en liste sur la page du Baron.
 
 export default {
+  image: "https://i.ibb.co/jk1jXnQG/baron-avatar-150.png",
+
   presentation: `Monsieur le Baron est un kanard blanc. Il porte une couronne de travers et un regard qui dit tout ce que la politesse m'interdit d'écrire. Je le vouvoie. Je le consulte avant chaque décision. Il me mord, ce qui vaut généralement approbation, parfois refus, et je n'ai jamais su faire la différence.
 
 On dit en ville que c'est lui qui décide. C'est faux. Je décide, puis il me mord, puis nous faisons ce qu'il voulait.`,

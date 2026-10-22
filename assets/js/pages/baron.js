@@ -10,10 +10,10 @@ const lignes = PAGES.filter((p) => baron.avis[p.cle] && p.cle !== "baron")
   )
   .join("");
 
-const contenu = `
+export const rendre = () => `
 <div class="conteneur">
   <header class="baron-heros apparait">
-    <img src="${esc(site.images.baron)}" width="150" height="150"
+    <img src="${esc(baron.image)}" width="150" height="150"
       alt="Monsieur le Baron, kanard blanc à la couronne de travers, au regard méprisant.">
     <p class="surtitre">Kanard · Conseiller · Mordeur</p>
     <h1>Monsieur le Baron</h1>
@@ -32,4 +32,6 @@ const contenu = `
   ${avisBaron("baron")}
 </div>`;
 
-monterPage({ cle: "baron", titre: "Monsieur le Baron", contenu });
+export const page = { cle: "baron", titre: "Monsieur le Baron" };
+
+if (typeof document !== "undefined") monterPage({ ...page, contenu: rendre() });

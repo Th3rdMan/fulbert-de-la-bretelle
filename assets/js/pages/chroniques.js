@@ -23,7 +23,7 @@ const entrees = chroniques
   })
   .join("");
 
-const contenu = `
+export const rendre = () => `
 <div class="conteneur">
   <header class="entete-page">
     <p class="surtitre">Livre premier</p>
@@ -35,4 +35,6 @@ const contenu = `
   ${avisBaron("chroniques")}
 </div>`;
 
-monterPage({ cle: "chroniques", titre: "Chroniques", contenu });
+export const page = { cle: "chroniques", titre: "Chroniques" };
+
+if (typeof document !== "undefined") monterPage({ ...page, contenu: rendre() });

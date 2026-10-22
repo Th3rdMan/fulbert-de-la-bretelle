@@ -19,7 +19,7 @@ function rendreParoles(texte) {
     .join("");
 }
 
-const contenu = `
+export const rendre = () => `
 <div class="conteneur">
   <header class="entete-page">
     <p class="surtitre">Livre deuxième</p>
@@ -65,20 +65,28 @@ const contenu = `
   ${avisBaron("repertoire")}
 </div>`;
 
-monterPage({ cle: "repertoire", titre: "Le Répertoire", contenu });
+export const page = { cle: "repertoire", titre: "Le Répertoire" };
 
-// Le lecteur Suno n'est chargé qu'à la demande : la page reste légère et
-// rien n'est envoyé à Suno tant que le visiteur n'a pas cliqué.
-document.querySelectorAll(".lecteur [data-charger]").forEach((bouton) => {
-  bouton.addEventListener("click", () => {
-    const bloc = bouton.closest(".lecteur");
-    const iframe = document.createElement("iframe");
-    iframe.src = `https://suno.com/embed/${encodeURIComponent(bloc.dataset.suno)}`;
-    iframe.title = `Lecteur Suno : ${bloc.dataset.titre}`;
-    iframe.allow = "autoplay; encrypted-media";
-    iframe.loading = "lazy";
-    bloc.prepend(iframe);
-    bouton.remove();
-    iframe.focus();
+export function apres() {
+
+  // Le lecteur Suno n'est chargé qu'à la demande : la page reste légère et
+  // rien n'est envoyé à Suno tant que le visiteur n'a pas cliqué.
+  document.querySelectorAll(".lecteur [data-charger]").forEach((bouton) => {
+    bouton.addEventListener("click", () => {
+      const bloc = bouton.closest(".lecteur");
+      const iframe = document.createElement("iframe");
+      iframe.src = `https://suno.com/embed/${encodeURIComponent(bloc.dataset.suno)}`;
+      iframe.title = `Lecteur Suno : ${bloc.dataset.titre}`;
+      iframe.allow = "autoplay; encrypted-media";
+      iframe.loading = "lazy";
+      bloc.prepend(iframe);
+      bouton.remove();
+      iframe.focus();
+    });
   });
-});
+}
+
+if (typeof document !== "undefined") {
+  monterPage({ ...page, contenu: rendre() });
+  apres();
+}

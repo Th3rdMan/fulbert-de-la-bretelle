@@ -2,7 +2,7 @@ import { monterPage, esc, avisBaron } from "../app.js";
 import { filet, icones } from "../ornements.js";
 import galerie from "../../../data/galerie.js";
 
-const contenu = `
+export const rendre = () => `
 <div class="conteneur">
   <header class="entete-page">
     <p class="surtitre">Livre troisième</p>
@@ -34,24 +34,32 @@ const contenu = `
   ${avisBaron("galerie")}
 </div>`;
 
-monterPage({ cle: "galerie", titre: "Galerie", contenu });
+export const page = { cle: "galerie", titre: "Galerie" };
 
-const dialogue = document.querySelector(".visionneuse");
-const img = dialogue.querySelector("img");
-let declencheur = null;
+export function apres() {
 
-document.querySelectorAll(".galerie button").forEach((b) => {
-  b.addEventListener("click", () => {
-    const g = galerie[Number(b.dataset.index)];
-    img.src = g.src;
-    img.alt = g.alt;
-    img.className = g.pixel ? "pixel" : "";
-    dialogue.querySelector("figcaption strong").textContent = g.titre;
-    dialogue.querySelector("figcaption span").textContent = g.legende;
-    declencheur = b;
-    dialogue.showModal();
+  const dialogue = document.querySelector(".visionneuse");
+  const img = dialogue.querySelector("img");
+  let declencheur = null;
+
+  document.querySelectorAll(".galerie button").forEach((b) => {
+    b.addEventListener("click", () => {
+      const g = galerie[Number(b.dataset.index)];
+      img.src = g.src;
+      img.alt = g.alt;
+      img.className = g.pixel ? "pixel" : "";
+      dialogue.querySelector("figcaption strong").textContent = g.titre;
+      dialogue.querySelector("figcaption span").textContent = g.legende;
+      declencheur = b;
+      dialogue.showModal();
+    });
   });
-});
-dialogue.querySelector(".fermer").addEventListener("click", () => dialogue.close());
-dialogue.addEventListener("click", (e) => { if (e.target === dialogue) dialogue.close(); });
-dialogue.addEventListener("close", () => declencheur && declencheur.focus());
+  dialogue.querySelector(".fermer").addEventListener("click", () => dialogue.close());
+  dialogue.addEventListener("click", (e) => { if (e.target === dialogue) dialogue.close(); });
+  dialogue.addEventListener("close", () => declencheur && declencheur.focus());
+}
+
+if (typeof document !== "undefined") {
+  monterPage({ ...page, contenu: rendre() });
+  apres();
+}

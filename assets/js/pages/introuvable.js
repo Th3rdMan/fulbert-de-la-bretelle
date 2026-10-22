@@ -1,7 +1,7 @@
 import { monterPage, avisBaron } from "../app.js";
 import { filet } from "../ornements.js";
 
-const contenu = `
+export const rendre = () => `
 <div class="conteneur">
   <header class="entete-page">
     <p class="surtitre">Erreur 404</p>
@@ -12,4 +12,6 @@ const contenu = `
   </header>
 </div>`;
 
-monterPage({ titre: "Page introuvable", contenu });
+export const page = { titre: "Page introuvable" };
+
+if (typeof document !== "undefined") monterPage({ ...page, contenu: rendre() });

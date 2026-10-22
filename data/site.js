@@ -14,6 +14,22 @@ export default {
   },
   suno: "https://suno.com/@fulbertdelabretelle",
 
+  // Adresse publique du site, utilisée pour les aperçus de partage
+  // (Open Graph, Twitter Card). Terminer par une barre oblique.
+  url: "https://th3rdman.github.io/fulbert-de-la-bretelle/",
+
+  // Aperçus de partage, page par page. « image » est facultatif : sans lui,
+  // c'est le portrait (images.portrait) qui s'affiche.
+  partage: {
+    accueil: { description: "Le site de Fulbert de la Bretelle, noble ruthvène, escrimeur et barde. Le ridicule se mérite." },
+    chroniques: { description: "Ma carrière, de l'auberge du Rhum à ranger aux cent étages de la Grande Termitière." },
+    repertoire: { description: "Mes chansons : pour qui, pourquoi, les paroles et de quoi les écouter." },
+    musee: { description: "Le Musée de la Ceinture. La collection commence bientôt." },
+    ordre: { description: "L'Ordre de la Ceinture : charte, blason, code et appel à candidatures.", image: "https://i.ibb.co/XZZqKWYY/blason-culotte-512.png" },
+    baron: { description: "Monsieur le Baron, kanard, et son avis sur toutes choses." },
+    galerie: { description: "Portraits, armes, demeure et kanard." },
+  },
+
   images: {
     portrait: "https://i.ibb.co/HTbyFLd8/fulbert-v2-large.jpg",
     portraitSerre: "https://i.ibb.co/0yDgfN9g/fulbert-v2-serre-150.jpg",
@@ -41,6 +57,7 @@ export default {
 
   ordre: {
     nom: "L'Ordre de la Ceinture",
+    blason: "https://i.ibb.co/XZZqKWYY/blason-culotte-512.png",
     statut: "Non reconnu officiellement (pour l'instant)",
     charte: `L'Ordre de la Ceinture est un ordre de chevalerie fondé par Fulbert de la Bretelle, à Port Magmor, en Crab Key.
 

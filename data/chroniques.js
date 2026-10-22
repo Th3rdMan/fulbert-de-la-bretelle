@@ -55,8 +55,6 @@ J'ai promis à Dame Korail de ne jamais la déshonorer. Je n'ai pas précisé à
     recit: `On m'a nommé Intendant de Crab Key. J'ai étudié les finances de la province pendant une nuit entière, à la chandelle, avec Monsieur le Baron sur les genoux du registre.
 
 J'en ai tiré des réformes fiscales audacieuses. Je ne dirai pas que tout le monde les a comprises. Je dirai que personne ne les a contestées en face.`,
-    image: "https://i.ibb.co/7xZLYhWz/fulbert-ministre-250x400.jpg",
-    legende: "Au pupitre, dans l'exercice de mes fonctions.",
   },
   {
     id: "royaume-pirate",
@@ -83,6 +81,8 @@ Je me suis rallié à la Couronne. J'ai écrit une chanson pour l'occasion, parc
     recit: `Me voici Ministre de l'Information, à la tête de la Commanderie de la Musique et des Esgourdes. Le titre est long, je l'ai fait graver en entier.
 
 Ma mission : que le Royaume entende ce qu'il doit entendre, en musique de préférence. Les esgourdes du peuple sont désormais sous ma responsabilité. Je les traite avec respect et à un volume raisonnable.`,
+    image: "https://i.ibb.co/7xZLYhWz/fulbert-ministre-250x400.jpg",
+    legende: "Au pupitre du Ministère, dans l'exercice de mes fonctions.",
   },
   {
     id: "grande-termitiere",

@@ -6,7 +6,7 @@ import ceintures from "../../../data/ceintures.js";
 const o = site.ordre;
 const total = ceintures.length;
 
-const contenu = `
+export const rendre = () => `
 <div class="conteneur">
   <header class="entete-page">
     <p class="surtitre">Ordre de chevalerie</p>
@@ -15,7 +15,7 @@ const contenu = `
   </header>
 
   <section class="ordre-heros section">
-    <img class="blason apparait" src="${esc(site.images.blason)}" width="512" height="512"
+    <img class="blason apparait" src="${esc(o.blason)}" width="512" height="512"
       alt="Blason de l'Ordre de la Ceinture.">
     <div class="apparait">
       <span class="statut">${esc(o.statut)}</span>
@@ -72,4 +72,6 @@ const contenu = `
   ${avisBaron("ordre")}
 </div>`;
 
-monterPage({ cle: "ordre", titre: "L'Ordre de la Ceinture", contenu });
+export const page = { cle: "ordre", titre: "L'Ordre de la Ceinture" };
+
+if (typeof document !== "undefined") monterPage({ ...page, contenu: rendre() });

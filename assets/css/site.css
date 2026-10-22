@@ -465,7 +465,7 @@ main { display: block; padding-block: clamp(2rem, 5vw, 4.5rem) clamp(3rem, 7vw, 
 .frise-entree .recit { max-width: var(--mesure); }
 .frise-entree figure { margin: 1.5rem 0 0; max-width: 34rem; }
 .frise-entree figure img {
-  width: 100%; max-height: 26rem; object-fit: cover;
+  width: auto; max-width: 100%; max-height: 26rem; object-fit: contain;
   border: 1px solid var(--rule); background: var(--surface);
 }
 .frise-entree figcaption, .legende { font-size: .88rem; color: var(--ink-soft); font-style: italic; margin-top: .55rem; }
@@ -612,7 +612,7 @@ main { display: block; padding-block: clamp(2rem, 5vw, 4.5rem) clamp(3rem, 7vw, 
   display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
   gap: clamp(2rem, 6vw, 5rem); align-items: start;
 }
-.ordre-heros .blason { max-width: 20rem; justify-self: center; filter: drop-shadow(0 10px 24px rgb(0 0 0 / .18)); }
+.ordre-heros .blason { max-width: 26rem; width: 100%; justify-self: center; filter: drop-shadow(0 10px 24px rgb(0 0 0 / .18)); }
 @media (max-width: 48rem) { .ordre-heros { grid-template-columns: 1fr; } .ordre-heros .blason { max-width: 13rem; } }
 
 .statut {
@@ -719,3 +719,12 @@ html:not(.js) .apparait { opacity: 1; transform: none; }
 
 /* Les ancres ne passent pas sous l'en-tête collant. */
 [id] { scroll-margin-top: 5.5rem; }
+
+/* Sans JavaScript : pas de bascule de thème ni de menu repliable. */
+html:not(.js) .bouton-theme, html:not(.js) .bouton-menu { display: none; }
+@media (max-width: 62rem) {
+  html:not(.js) .site-entete .conteneur { flex-wrap: wrap; }
+  html:not(.js) .nav-principale { display: block; position: static; box-shadow: none; border: 0; background: none; width: 100%; }
+  html:not(.js) .nav-principale ul { flex-direction: row; padding: 0 0 .5rem; }
+  html:not(.js) .nav-principale a { border-bottom: 0; padding: .4rem .6rem; font-size: .75rem; }
+}

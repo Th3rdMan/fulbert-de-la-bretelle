@@ -25,7 +25,7 @@ const nouvelles = chroniques
   .reverse();
 const derniere = chansons[0];
 
-const contenu = `
+export const rendre = () => `
 <div class="conteneur">
   <section class="accueil-heros section">
     <div class="portrait-cadre apparait">
@@ -105,4 +105,6 @@ const contenu = `
   ${avisBaron("accueil")}
 </div>`;
 
-monterPage({ cle: "accueil", contenu });
+export const page = { cle: "accueil", titre: null };
+
+if (typeof document !== "undefined") monterPage({ ...page, contenu: rendre() });

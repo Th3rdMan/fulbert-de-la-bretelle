@@ -64,7 +64,7 @@ export const avisBaron = (cle) => {
   const avis = baron.avis[cle];
   if (!avis) return "";
   return `<aside class="avis-baron apparait" aria-label="Avis de Monsieur le Baron">
-    <img src="${esc(site.images.baron)}" alt="" width="68" height="68" loading="lazy">
+    <img src="${esc(baron.image)}" alt="" width="68" height="68" loading="lazy">
     <div>
       <p class="surtitre">L'avis de Monsieur le Baron</p>
       <blockquote><p>${esc(avis.texte)}</p></blockquote>
@@ -95,7 +95,7 @@ function majBoutonTheme(bouton) {
 
 // --- En-tête et pied --------------------------------------------------------
 
-function entete(pageCourante) {
+export function entete(pageCourante) {
   const liens = PAGES.map(
     (p) =>
       `<li><a href="${p.href}"${p.cle === pageCourante ? ' aria-current="page"' : ""}>${esc(p.titre)}</a></li>`
@@ -111,7 +111,7 @@ function entete(pageCourante) {
   </header>`;
 }
 
-function pied() {
+export function pied() {
   const a = site.adresse;
   return `<footer class="site-pied">
     <div class="conteneur">
@@ -149,10 +149,17 @@ export function observerApparitions(racine = document) {
 
 // --- Montage de la page ----------------------------------------------------
 
+export const titreDocument = (titre) => (titre ? `${titre} · ${site.nom}` : `${site.nom} · ${site.devise}`);
+
+// Les pages HTML sont prérendues (voir outils/prerendu.js) pour les robots et
+// les navigateurs sans JavaScript. Dans le navigateur, on rend à nouveau tout
+// depuis data/ : une modification des données s'affiche même si le prérendu
+// n'a pas encore été régénéré.
 export function monterPage({ cle, titre, contenu }) {
   document.documentElement.classList.add("js");
-  document.title = titre ? `${titre} · ${site.nom}` : `${site.nom} · ${site.devise}`;
+  document.title = titreDocument(titre);
 
+  document.querySelectorAll(".lien-evitement, .site-entete, .site-pied").forEach((el) => el.remove());
   document.body.insertAdjacentHTML("afterbegin", entete(cle));
   const main = document.getElementById("contenu");
   main.innerHTML = contenu;
