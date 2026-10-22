@@ -74,7 +74,7 @@ Monsieur le Baron, consulté, n'a pas mordu. J'ai pris cela pour un oui.`,
 
 Je me suis rallié à la Couronne. J'ai écrit une chanson pour l'occasion, parce qu'un ralliement sans chanson n'est qu'un changement d'avis.`,
     image: "https://i.ibb.co/6cDjRdkL/Le-Retour-du-Roy-en-Fresque.png",
-    legende: "La Création du Roy, fresque.",
+    legende: "Le Retour du Roy, fresque.",
   },
   {
     id: "ministre-information",

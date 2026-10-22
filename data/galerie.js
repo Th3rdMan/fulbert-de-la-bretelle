@@ -63,7 +63,7 @@ export default [
   {
     id: "fresque",
     src: "https://i.ibb.co/6cDjRdkL/Le-Retour-du-Roy-en-Fresque.png",
-    titre: "La Création du Roy",
+    titre: "Le Retour du Roy",
     legende: "Fresque commémorative.",
     alt: "Fresque représentant le Roy entouré de sa cour.",
   },
