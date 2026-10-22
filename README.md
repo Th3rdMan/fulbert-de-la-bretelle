@@ -12,7 +12,7 @@ Tout le contenu éditorial est dans `data/`. On n'édite jamais le HTML.
 | Ajouter une chronique              | `data/chroniques.js` (à la fin du tableau) |
 | Ajouter une chanson                | `data/chansons.js` (en tête : elle devient « dernière chanson ») |
 | Exposer une ceinture confisquée    | `data/ceintures.js` |
-| Ajouter une illustration           | `data/galerie.js` |
+| Ajouter une illustration           | `data/galerie.js` (fichier image dans `assets/img/` ou URL) |
 | Ajouter un membre de l'Ordre       | `data/membres-ordre.js` |
 | Changer un avis du Baron           | `data/baron.js` |
 | Devise, adresse, charte, code, nombre de vitrines | `data/site.js` |

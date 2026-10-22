@@ -45,7 +45,7 @@ Il y a une tour, parce qu'il faut une tour. Monsieur le Baron a choisi sa chambr
     recit: `Dame Korail m'a forgé une épée longue et me l'a offerte. Je l'ai appelée La Korsaire. Elle est droite, elle est juste, elle ne ment jamais : tout ce que je ne suis pas, et c'est pour cela que nous nous entendons.
 
 J'ai promis à Dame Korail de ne jamais la déshonorer. Je n'ai pas précisé à quelle échéance.`,
-    image: "https://i.ibb.co/x8FPDrtD/p-e-baroque-sur-velours-royal.png",
+    image: "assets/img/korsaire-realiste.jpg",
     legende: "La Korsaire, sur velours.",
   },
   {

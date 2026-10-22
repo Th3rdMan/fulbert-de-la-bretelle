@@ -680,6 +680,8 @@ main { display: block; padding-block: clamp(2rem, 5vw, 4.5rem) clamp(3rem, 7vw, 
 .galerie button:hover { border-color: var(--or); }
 .galerie img { width: 100%; aspect-ratio: 1; object-fit: cover; background: var(--bg-deep); }
 .galerie img.pixel, .visionneuse img.pixel { image-rendering: pixelated; object-fit: contain; }
+.galerie img.pixel { padding: 10%; }
+.visionneuse img.pixel { width: min(70vh, 32rem); height: auto; }
 .galerie figcaption { margin-top: .8rem; }
 .galerie figcaption strong { font-family: var(--f-titre); font-weight: 600; font-size: .95rem; letter-spacing: .05em; display: block; }
 .galerie figcaption span { font-size: .9rem; color: var(--ink-soft); font-style: italic; }
