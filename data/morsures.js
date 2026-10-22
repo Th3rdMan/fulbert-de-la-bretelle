@@ -5,7 +5,7 @@
 //
 // Modèle :
 // {
-//   date: "14 brumaire",              // texte libre ; vide : « date non consignée »
+//   date: "15 octobre 2026",          // texte libre ; vide : « date non consignée »
 //   victime: "Le tavernier du Rhum à ranger",
 //   motif: "Avait servi la bière avant le vin",   // sans guillemets, ils sont ajoutés
 //   verdict: "Mordu. Adoption s'ensuivit.",
@@ -14,22 +14,16 @@
 
 export default [
   {
-    date: "",
+    date: "15 octobre 2026",
     victime: "Le tavernier du Rhum à ranger",
     motif: "Avait servi la bière avant le vin",
     verdict: "Mordu. Adoption s'ensuivit.",
     lieu: "Auberge du Rhum à ranger, Port Magmor",
   },
   {
-    date: "",
+    date: "22 octobre 2026",
     victime: "Fulbert de la Bretelle",
     motif: "Avait approché un vase des lèvres en croyant à un ocarina",
     verdict: "Mordu au poignet.",
-  },
-  {
-    date: "",
-    victime: "Le parchemin de la Gazette",
-    motif: "Dépassait de la poche",
-    verdict: "Mordu. Illisible depuis.",
   },
 ];
