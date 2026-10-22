@@ -59,6 +59,8 @@ Monsieur le Baron, mon kanard, relit tout. Il n'approuve rien.`,
     pupitre: "https://i.ibb.co/7xZLYhWz/fulbert-ministre-250x400.jpg",
     baron: "https://i.ibb.co/jk1jXnQG/baron-avatar-150.png",
     blason: "https://i.ibb.co/XZZqKWYY/blason-culotte-512.png",
+    // Blason de l'Ordre en petit, pour l'en-tête (1x, 2x et 3x).
+    blasonMarque: ["assets/img/blason-40.png", "assets/img/blason-80.png", "assets/img/blason-120.png"],
     korsaire: "assets/img/korsaire-realiste.jpg",
     korsairePixel: "assets/img/korsaire-pixel.png",
     mordue: "assets/img/mordue-realiste.jpg",

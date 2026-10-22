@@ -4,19 +4,6 @@
 const svg = (viewBox, contenu, attrs = "") =>
   `<svg viewBox="${viewBox}" aria-hidden="true" focusable="false" ${attrs}>${contenu}</svg>`;
 
-// Écu de la marque : sinople, à la bande d'or chargée d'une boucle.
-export const ecu = () =>
-  svg(
-    "0 0 40 46",
-    `<defs><clipPath id="ecu-champ"><path d="M3 3h34v17c0 12-8 19.5-17 23C11 39.5 3 32 3 20z"/></clipPath></defs>
-     <path d="M3 3h34v17c0 12-8 19.5-17 23C11 39.5 3 32 3 20z" style="fill:var(--sinople-fond)"/>
-     <g clip-path="url(#ecu-champ)">
-       <path d="M-2 4 8-2 46 36 36 46z" style="fill:var(--or)"/>
-       <rect x="16" y="14.5" width="8" height="7" rx=".8" transform="rotate(45 20 18)" style="fill:none;stroke:var(--gueules-fond);stroke-width:1.6"/>
-     </g>
-     <path d="M3 3h34v17c0 12-8 19.5-17 23C11 39.5 3 32 3 20z" style="fill:none;stroke:var(--or);stroke-width:2"/>`
-  );
-
 // Filet : deux traits, un losange au centre, deux points.
 export const filet = (classe = "filet") =>
   svg(

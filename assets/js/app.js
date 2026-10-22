@@ -3,7 +3,7 @@
 
 import site from "../../data/site.js";
 import baron from "../../data/baron.js";
-import { ecu, filet, icones, lettrine } from "./ornements.js";
+import { filet, icones, lettrine } from "./ornements.js";
 
 export const PAGES = [
   { cle: "accueil", href: "index.html", titre: "Accueil" },
@@ -103,7 +103,7 @@ export function entete(pageCourante) {
   return `<a class="lien-evitement" href="#contenu">Aller au contenu</a>
   <header class="site-entete">
     <div class="conteneur">
-      <a class="marque" href="index.html">${ecu()}<span>${esc(site.nom)}</span></a>
+      <a class="marque" href="index.html"><img src="${esc(site.images.blasonMarque[0])}" srcset="${site.images.blasonMarque.map((src, i) => `${esc(src)} ${i + 1}x`).join(", ")}" width="40" height="40" alt=""><span>${esc(site.nom)}</span></a>
       <nav class="nav-principale" id="nav-principale" aria-label="Navigation principale"><ul>${liens}</ul></nav>
       <button class="bouton-icone bouton-theme" type="button"></button>
       <button class="bouton-icone bouton-menu" type="button" aria-expanded="false" aria-controls="nav-principale" aria-label="Ouvrir le menu">${icones.menu}</button>

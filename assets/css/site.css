@@ -203,7 +203,7 @@ main { display: block; padding-block: clamp(2rem, 5vw, 4.5rem) clamp(3rem, 7vw, 
   margin-right: auto;
   white-space: nowrap;
 }
-.marque svg { width: 2rem; height: 2rem; flex: none; }
+.marque img { width: 2.5rem; height: 2.5rem; flex: none; filter: drop-shadow(0 1px 1px rgb(0 0 0 / .25)); }
 .marque:hover { color: var(--gueules); }
 
 .nav-principale ul {
