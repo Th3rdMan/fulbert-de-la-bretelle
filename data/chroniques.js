@@ -68,9 +68,9 @@ Monsieur le Baron, consulté, n'a pas mordu. J'ai pris cela pour un oui.`,
     id: "coup-d-etat-liarr",
     date: "",
     titre: "Le coup d'État d'Émile Liarr",
-    recit: `Émile Liarr a pris le pouvoir. Il y a eu des heures où chacun regardait ses voisins pour savoir de quel côté se tenir. Moi, j'ai regardé Monsieur le Baron.
+    recit: `Émile Liarr gardait la couronne depuis feu Ranxerox. On la lui avait prise ; il l'a reprise, depuis le Valégro, sans un canon, sans un tambour, sans une goutte de sang. Le trône est passé du cierge au bal en un seul jour.
 
-Je me suis rallié à la Couronne. J'ai écrit une chanson pour l'occasion, parce qu'un ralliement sans chanson n'est qu'un changement d'avis.`,
+Il y a eu des heures où chacun regardait ses voisins pour savoir de quel côté se tenir. Moi, j'ai regardé Monsieur le Baron. Puis je me suis rallié à la Couronne, et je me suis proposé comme premier chevalier. J'ai écrit une chanson pour l'occasion, parce qu'un ralliement sans chanson n'est qu'un changement d'avis.`,
     image: "https://i.ibb.co/6cDjRdkL/Le-Retour-du-Roy-en-Fresque.png",
     legende: "Le Retour du Roy, fresque.",
   },
@@ -88,9 +88,9 @@ Ma mission : que le Royaume entende ce qu'il doit entendre, en musique de préf�
     id: "grande-termitiere",
     date: "",
     titre: "Les cent étages de la Grande Termitière",
-    recit: `J'ai gravi les cent étages de la Grande Termitière, sous les montagnes de Bananie. Des araignées, des fourmis de la taille d'un âne, une salamandre qui crachait du feu, et pas un seul ascenseur.
+    recit: `J'ai gravi les cent étages de la Grande Termitière, sous les montagnes de Bananie, avec Thalassa et Felony, Monsieur le Baron sur l'épaule. Des araignées au dixième, des fourmis hautes comme un homme au cinquantième, une salamandre affamée tout là-haut, et pas un seul ascenseur.
 
-Au sommet, j'ai laissé ma ceinture. Je ne dirai pas comment. Le fondateur de l'Ordre de la Ceinture a donc perdu la sienne avant d'en prendre une seule. J'y vois la preuve de mon intégrité : je ne demande à personne un sacrifice que je n'ai pas consenti moi-même.`,
+Au centième, j'ai détaché ma ceinture et je l'ai clouée dans la pierre. Qui veut la reprendre n'a qu'à monter. Le fondateur de l'Ordre de la Ceinture a donc perdu la sienne avant d'en prendre une seule. J'y vois la preuve de mon intégrité : je ne demande à personne un sacrifice que je n'ai pas consenti moi-même.`,
   },
   {
     id: "ocarina-bananie",

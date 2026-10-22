@@ -14,7 +14,7 @@ function rendreParoles(texte) {
       if (INTERTITRE.test(lignes[0].trim())) {
         titre = lignes.shift().trim().replace(/^\[|\]$/g, "");
       }
-      return `${titre ? `<p class="intertitre">${esc(titre)}</p>` : ""}<p>${esc(lignes.join("\n"))}</p>`;
+      return `${titre ? `<p class="intertitre">${esc(titre)}</p>` : ""}<p>${lignes.map((l) => `<span class="vers">${esc(l)}</span>`).join("")}</p>`;
     })
     .join("");
 }

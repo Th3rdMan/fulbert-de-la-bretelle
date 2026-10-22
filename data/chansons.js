@@ -34,7 +34,6 @@ La troisième se perdit en chemin,
 Et la dernière, d'un geste meurtrier,
 Faucha les fleurs d'un parterre entier.
 
-[Refrain]
 Pleurez, pleurez, pauvres pétunias,
 Fauchés en fleur, sans un dernier éclat !
 Pleurez la rue qui menait quelque part,
@@ -45,35 +44,10 @@ On vit la nuit, on fuit le soleil d'été,
 Et le matin, dans chaque basse-cour,
 Les Confédérés pondent leurs œufs du jour.
 
-[Refrain]
 Pleurez, pleurez, pauvres pétunias,
 Le Baron, lui, ne vous pleurera pas !
 Il garde l'étang, le bec et l'œil sévère :
 Qu'aucun mutant ne ponde sur sa rivière !`,
-  },
-  {
-    id: "la-termitiere",
-    titre: "La Termitière",
-    contexte: `Écrite au retour de la Grande Termitière, pour mes deux compagnons de cordée et pour tous ceux qui croient qu'on redescend d'une ascension avec plus que ce qu'on avait en montant.
-
-Cent étages, des araignées, des fourmis géantes, une salamandre, un trésor légendaire, un ocarina. Au bout du compte : une omelette aux champignons et une ceinture en moins.`,
-    dedicataire: "mes compagnons de la Termitière",
-    style: "Ballade héroï-comique",
-    sunoId: "8a083991-bfd4-480e-ba34-30a6345d2698",
-    lien: "https://suno.com/song/8a083991-bfd4-480e-ba34-30a6345d2698",
-    paroles: ``,
-  },
-  {
-    id: "vive-le-roy",
-    titre: "Vive le Roy Emile",
-    contexte: `Écrite pour le retour du Roy Émile sur le trône. Un peuple qui votait et priait pendant que la couronne prenait la poussière, un roi qui aime la danse et les festins, une couronne prise puis rendue sans qu'une goutte de sang ne coule.
-
-Je l'ai chantée le jour de mon ralliement. Elle se danse, elle se boit, elle se crie.`,
-    dedicataire: "Sa Majesté le Roy Émile",
-    style: "Chanson de taverne",
-    sunoId: "8fbff897-4bf3-4669-96c1-d24c03e8566b",
-    lien: "https://suno.com/s/PRNi7Hjd5lh0wGfV",
-    paroles: ``,
   },
   {
     id: "port-magmor",
@@ -85,6 +59,188 @@ On y perd tout, même son or. On y revient quand même.`,
     style: "Chant de marins, gigue baroque",
     sunoId: "b2a1cbc2-c215-46cf-9b95-2142e3892eee",
     lien: "https://suno.com/s/CtcK59jI35YNw14o",
-    paroles: ``,
+    paroles: `Sur son île de rochers gris,
+Battue par les vents et les cris,
+Port Magmor dormait sans bruit,
+Le rhum pleurait toutes les nuits.
+
+Mais voilà que les portes s'ouvrent,
+Que les chopes se recouvrent,
+Que les tables sont trop petites,
+Et que les bouteilles se vident vite !
+
+Port Magmor, Port Magmor,
+On y perd tout, même son or !
+Mais on y boit jusqu'à l'aurore,
+Port Magmor, Port Magmor !
+
+Qu'importe d'où vient le voyageur,
+Qu'il soit pirate ou bien seigneur,
+Ici, tant que la chope est pleine,
+On oublie les rois et les reines !
+
+Port Magmor, Port Magmor,
+On y perd tout, même son or !
+Mais on y boit jusqu'à l'aurore,
+Port Magmor, Port Magmor !`,
+  },
+  {
+    id: "vive-le-roy",
+    titre: "Vive le Roy Emile",
+    contexte: `Écrite pour le retour du Roy Émile sur le trône. Il gardait la couronne depuis feu Ranxerox ; on la lui a prise ; il l'a reprise, depuis le Valégro, poliment, sans une goutte de sang. Le trône est passé du cierge au bal en un seul jour.
+
+Je l'ai chantée le jour de mon ralliement. J'y jure ma ceinture. Pardon : ma foi.`,
+    dedicataire: "Sa Majesté le Roy Émile",
+    style: "Chanson de taverne",
+    sunoId: "8fbff897-4bf3-4669-96c1-d24c03e8566b",
+    lien: "https://suno.com/s/PRNi7Hjd5lh0wGfV",
+    paroles: `Pour le Roy… et pour tous ceux qui ont soif !
+
+On priait matin et soir,
+On votait à genoux,
+La couronne, au fond d'un tiroir,
+Prenait la poussière… et nous ?
+Nous rêvions d'un roi qui danse,
+D'un bal, d'un vin, d'un serment ;
+Et du Valégro, en silence,
+Est venu le changement.
+
+Vive le Roy, vive Emile !
+Le trône a retrouvé son roi !
+Remplissez les coupes, la ville
+Danse ce soir comme autrefois !
+
+Il l'avait gardée, cette couronne,
+Depuis feu Ranxerox, jalousement ;
+On la lui prit, mais il pardonne :
+Il l'a reprise… poliment.
+Sans une goutte de sang versé,
+Sans un canon, sans un tambour,
+La Dame a vu le trône passer
+Du cierge au bal en un seul jour.
+
+Vive le Roy, vive Emile !
+Le trône a retrouvé son roi !
+Remplissez les coupes, la ville
+Danse ce soir comme autrefois !
+
+Que les Seeliens gardent leurs prières,
+Leurs temples et leurs vieux secrets ;
+Qu'ils conseillent, qu'ils soient nos frères…
+Mais le trône est Ruthvène, à jamais.
+
+Et s'il faut, pour la Chevalerie,
+Un premier chevalier sous votre loi,
+Il est déjà là, plume au vent, qui rit,
+Et jure sa ceinture… pardon, sa foi !
+
+Vive le Roy, vive Emile !
+Le trône a retrouvé son roi !
+Remplissez les coupes, la ville
+Danse ce soir comme autrefois !
+Vive le Roy, vive Emile !
+Que sonnent cors et hautbois !`,
+  },
+  {
+    id: "la-termitiere",
+    titre: "La Termitière",
+    contexte: `Écrite au retour de la Grande Termitière, pour Thalassa, Celle qui guide, et Felony, générale au poing solide : nous n'étions que trois à monter, plus Monsieur le Baron, mon sergent.
+
+L'or d'Elmer Caps, traîné là-dedans par un intendant mal tourné, ne m'a jamais intéressé : je montais pour un ocarina. Je suis redescendu sans l'un ni l'autre, avec une chanson, une omelette aux champignons et une ceinture en moins.`,
+    dedicataire: "Thalassa et Felony",
+    style: "Ballade héroï-comique",
+    sunoId: "8a083991-bfd4-480e-ba34-30a6345d2698",
+    lien: "https://suno.com/song/8a083991-bfd4-480e-ba34-30a6345d2698",
+    paroles: `Oyez ! Ce que je vais chanter, je l'ai vu de mes yeux.
+Et j'en ai encore les côtes qui sifflent.
+
+Sous les montagnes de Bananie
+Dort un gouffre que nul n'oublie :
+La Termitière et ses cent étages,
+Cent fois la peur, cent fois le carnage.
+L'or d'Elmer Caps y fut traîné
+Par un intendant mal tourné ;
+Mais l'or ne fut jamais mon appât :
+Je montais pour un ocarina.
+
+Cent étages ! Cent batailles !
+Cent fois l'estoc, cent fois la taille !
+Ni fuite, ni grâce, ni merci :
+On monte, on monte, et l'on survit !
+Plus haut ! Plus haut ! Jusqu'au sommet !
+La Termitière ne nous aura jamais !
+
+Nous n'étions que trois à monter,
+Trois fous que rien n'a arrêtés :
+Thalassa fut Celle qui guide,
+Felony, générale au poing solide,
+Et moi, bardé de mon velours,
+Sans casque, sans plaque et sans secours.
+Sur mon épaule, blanc et méchant,
+Monsieur le Baron, mon sergent.
+
+Cent étages ! Cent batailles !
+Cent fois l'estoc, cent fois la taille !
+Ni fuite, ni grâce, ni merci :
+On monte, on monte, et l'on survit !
+Plus haut ! Plus haut ! Jusqu'au sommet !
+La Termitière ne nous aura jamais !
+
+Au dixième étage, les araignées
+Tendaient leurs toiles par milliers ;
+Au cinquantième, les fourmis,
+Hautes comme un homme, et sans merci.
+Et tout là-haut, dans la fumée,
+Rôde une Salamandre affamée :
+D'un homme, de sa lame et de son fer,
+Elle ne laisserait qu'un squelette clair.
+
+Cent étages ! Cent batailles !
+Cent fois l'estoc, cent fois la taille !
+Ni fuite, ni grâce, ni merci :
+On monte, on monte, et l'on survit !
+Plus haut ! Plus haut ! Jusqu'au sommet !
+La Termitière ne nous aura jamais !
+
+J'ai compté jusqu'à quarante,
+Après, la mémoire est flottante :
+On ne compte plus ses ennemis
+Quand on se bat pour rester en vie.
+Ma Korsaire a chanté bien haut,
+Mon pourpoint a trois trous de trop ;
+J'ai perdu ma plume au combat,
+Et les trois quarts de mon sang-froid.
+
+Cent étages ! Cent batailles !
+Cent fois l'estoc, cent fois la taille !
+Ni fuite, ni grâce, ni merci :
+On monte, on monte, et l'on survit !
+Plus haut ! Plus haut ! Jusqu'au sommet !
+La Termitière ne nous aura jamais !
+
+Au centième, j'ai plié le genou,
+Non par respect, juste à bout ;
+J'ai détaché là ma ceinture,
+Et l'ai clouée dans une pierre dure.
+Qui veut la reprendre, qu'il monte :
+Cent étages, et qu'il les compte.
+
+Puis il a fallu redescendre.
+Cent étages, messieurs. En tenant mes chausses.
+Le ridicule se mérite. Celui-là, je l'avais bien gagné.
+
+Cent étages ! Cent batailles !
+Cent fois l'estoc, cent fois la taille !
+Gloire à Thalassa qui nous mène,
+Gloire à Felony, lame sereine,
+Et gloire au kanard sans pitié
+Qui en a mordu la moitié !
+Plus haut ! Plus haut ! Jusqu'au sommet !
+La Termitière ne nous aura jamais !
+
+Le trésor elmérien ? Improbable...
+L'ocarina ? Tout aussi Introuvable.
+Mais j'ai rapporté mieux : une chanson.
+Et une omelette aux champignons.`,
   },
 ];
