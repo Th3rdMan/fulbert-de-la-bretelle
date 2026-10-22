@@ -8,6 +8,7 @@ on:
     paths:
       - "data/**"
       - "assets/js/**"
+      - "assets/css/**"
       - "outils/**"
   workflow_dispatch:
 
