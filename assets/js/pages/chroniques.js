@@ -1,16 +1,21 @@
-import { monterPage, esc, paragraphes, avisBaron, romain } from "../app.js";
+import { monterPage, esc, paragraphes, avisBaron } from "../app.js";
 import { filet } from "../ornements.js";
 import chroniques from "../../../data/chroniques.js";
+import chansons from "../../../data/chansons.js";
 
 const entrees = chroniques
-  .map((c, i) => {
-    const derniere = i === chroniques.length - 1;
-    const date = c.date || `Chapitre ${romain(i + 1)}`;
-    return `<li class="frise-entree apparait" id="${esc(c.id)}">
+  .map((c) => {
+    const chanson = c.chanson && chansons.find((ch) => ch.id === c.chanson);
+    return `<li class="frise-entree apparait${c.enCours ? " frise-en-cours" : ""}" id="${esc(c.id)}">
       <span class="frise-noeud" aria-hidden="true"></span>
-      <p class="surtitre">${esc(date)}</p>
-      <h2>${esc(c.titre)}${derniere ? ' <span class="en-cours">En cours</span>' : ""}</h2>
+      ${c.date ? `<p class="surtitre"><time>${esc(c.date)}</time></p>` : ""}
+      <h2>${esc(c.titre)}${c.enCours ? ' <span class="en-cours">En cours</span>' : ""}</h2>
       <div class="recit">${paragraphes(c.recit)}</div>
+      ${
+        chanson
+          ? `<p class="lien-croise"><a class="lien-fleche" href="repertoire.html#${esc(chanson.id)}">La chanson : ${esc(chanson.titre)}</a></p>`
+          : ""
+      }
       ${
         c.image
           ? `<figure>

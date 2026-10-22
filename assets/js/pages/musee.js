@@ -3,22 +3,22 @@ import { filet, socle, ceinture } from "../ornements.js";
 import ceintures from "../../../data/ceintures.js";
 
 const total = ceintures.length;
-const nbVitrines = Math.max(site.musee.vitrinesReservees, total);
+const libres = site.musee.emplacementsLibres;
 
-const vitrine = (piece, i) => {
-  const n = numero(i + 1);
-  if (!piece) {
-    return `<li class="vitrine apparait">
-      <div class="vitrine-caisse" role="img" aria-label="Vitrine numéro ${i + 1}, vide">
+// Vitrine vide, non numérotée : la salle en garde toujours quelques-unes
+// après la dernière pièce exposée.
+const vitrineLibre = () => `<li class="vitrine vitrine-libre apparait">
+      <div class="vitrine-caisse" role="img" aria-label="Vitrine vide">
         <div class="vitrine-interieur"><div class="vitrine-socle">${socle()}</div></div>
       </div>
       <div class="vitrine-pied" aria-hidden="true"></div>
       <div class="cartel">
-        <span class="cartel-numero">N° ${n}</span>
         <p class="cartel-titre">Emplacement réservé</p>
       </div>
     </li>`;
-  }
+
+const vitrine = (piece, i) => {
+  const n = numero(i + 1);
   const visuel = piece.image
     ? `<img src="${esc(piece.image)}" alt="Ceinture de ${esc(piece.porteur)}" loading="lazy">`
     : ceinture();
@@ -39,7 +39,7 @@ const vitrine = (piece, i) => {
   </li>`;
 };
 
-const vitrines = Array.from({ length: nbVitrines }, (_, i) => vitrine(ceintures[i], i)).join("");
+const vitrines = ceintures.map(vitrine).join("") + Array.from({ length: libres }, vitrineLibre).join("");
 
 const accueil =
   total === 0
@@ -56,7 +56,7 @@ export const rendre = () => `
     ${accueil}
     <dl class="musee-registre">
       <div><dt>Pièces exposées</dt><dd>${total}</dd></div>
-      <div><dt>Vitrines</dt><dd>${nbVitrines}</dd></div>
+      <div><dt>Emplacements disponibles</dt><dd>${libres}</dd></div>
       <div><dt>Entrée</dt><dd>Libre</dd></div>
     </dl>
   </header>

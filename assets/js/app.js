@@ -11,7 +11,7 @@ export const PAGES = [
   { cle: "repertoire", href: "repertoire.html", titre: "Le Répertoire" },
   { cle: "musee", href: "musee.html", titre: "Le Musée" },
   { cle: "ordre", href: "ordre.html", titre: "L'Ordre" },
-  { cle: "baron", href: "baron.html", titre: "Le Baron" },
+  { cle: "registre", href: "registre.html", titre: "Le Registre" },
   { cle: "galerie", href: "galerie.html", titre: "Galerie" },
 ];
 

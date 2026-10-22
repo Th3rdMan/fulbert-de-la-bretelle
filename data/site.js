@@ -5,6 +5,29 @@ export default {
   nom: "Fulbert de la Bretelle",
   devise: "Le ridicule se mérite.",
   qualite: "Noble ruthvène, escrimeur et barde",
+
+  // Texte de présentation sous le nom, sur l'accueil (paragraphes séparés
+  // par une ligne vide). Les charges et titres sont dans data/titres.js.
+  presentation: `Je tiens ce site moi-même : on n'est jamais si bien raconté que par soi.
+
+Monsieur le Baron, mon kanard, relit tout. Il n'approuve rien.`,
+
+  // Sommaire de l'accueil : une ligne de description par page.
+  sommaire: {
+    chroniques: "Ma carrière, de l'auberge du Rhum à ranger jusqu'à aujourd'hui.",
+    repertoire: "Mes chansons, leurs raisons d'être, leurs paroles.",
+    musee: "La collection de l'Ordre. Visite libre.",
+    ordre: "La charte, le code, et une place pour vous.",
+    registre: "Les morsures de Monsieur le Baron, dûment consignées.",
+    galerie: "Mon portrait, mes armes, ma demeure, mes œuvres.",
+  },
+
+  // En-tête du Registre des Morsures.
+  registre: {
+    surtitre: "Greffe du Castel Bretelle",
+    titre: "Le Registre des Morsures",
+    chapeau: "Où sont consignées, par ordre d'arrivée, les morsures infligées par Monsieur le Baron, avec leur motif et leur verdict. Le registre fait foi.",
+  },
   adresse: {
     demeure: "Castel Bretelle",
     precision: "juste à côté de la fontaine",
@@ -26,8 +49,8 @@ export default {
     repertoire: { description: "Mes chansons : pour qui, pourquoi, les paroles et de quoi les écouter." },
     musee: { description: "Le Musée de la Ceinture. La collection commence bientôt." },
     ordre: { description: "L'Ordre de la Ceinture : charte, blason, code et appel à candidatures.", image: "https://i.ibb.co/XZZqKWYY/blason-culotte-512.png" },
-    baron: { description: "Monsieur le Baron, kanard, et son avis sur toutes choses." },
-    galerie: { description: "Portraits, armes, demeure et kanard." },
+    registre: { description: "Le Registre des Morsures de Monsieur le Baron : victimes, motifs, verdicts." },
+    galerie: { description: "Mon portrait, mes armes, ma demeure, et mes œuvres." },
   },
 
   images: {
@@ -51,9 +74,11 @@ export default {
   ],
 
   musee: {
-    // Nombre minimal de vitrines exposées. S'il y a plus de ceintures que
-    // de vitrines, le musée s'agrandit tout seul.
-    vitrinesReservees: 12,
+    // Nombre de vitrines vides présentées après les pièces exposées. La
+    // salle grandit d'elle-même : chaque ceinture ajoutée dans
+    // data/ceintures.js occupe une vitrine, et ces emplacements libres
+    // restent toujours à la suite.
+    emplacementsLibres: 3,
   },
 
   ordre: {

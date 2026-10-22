@@ -1,7 +1,9 @@
-// Les avis de Monsieur le Baron. Une entrée par section du site.
-// La clé doit correspondre au nom de la page (accueil, chroniques,
-// repertoire, musee, ordre, baron, galerie). Le texte apparaît en
-// encart sur la page concernée et en liste sur la page du Baron.
+// Monsieur le Baron : son portrait, sa présentation (en tête du Registre des
+// Morsures) et ses avis.
+//
+// avis : une entrée par page. La clé doit correspondre au nom de la page
+// (accueil, chroniques, repertoire, musee, ordre, registre, galerie). Le
+// texte apparaît en encart au pied de la page concernée.
 
 export default {
   image: "https://i.ibb.co/jk1jXnQG/baron-avatar-150.png",
@@ -21,7 +23,7 @@ On dit en ville que c'est lui qui décide. C'est faux. Je décide, puis il me mo
     },
     repertoire: {
       section: "Le Répertoire",
-      texte: "Coin.",
+      texte: "Je les ai toutes entendues depuis son épaule, à deux pouces de sa bouche. Je n'ai rien demandé.",
     },
     musee: {
       section: "Le Musée de la Ceinture",
@@ -31,13 +33,13 @@ On dit en ville que c'est lui qui décide. C'est faux. Je décide, puis il me mo
       section: "L'Ordre de la Ceinture",
       texte: "Je ne suis pas membre. J'ai des principes.",
     },
-    baron: {
-      section: "Cette page",
-      texte: "Trop courte.",
+    registre: {
+      section: "Le Registre des Morsures",
+      texte: "Incomplet. Je ne déclare pas tout.",
     },
     galerie: {
       section: "La Galerie",
-      texte: "On m'a retiré de la galerie. Je n'en attendais pas moins.",
+      texte: "On m'a proposé d'y figurer. J'ai refusé. On ne met pas un kanard au mur.",
     },
   },
 };

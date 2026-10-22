@@ -22,7 +22,7 @@ const FICHIERS = {
   repertoire: "repertoire.html",
   musee: "musee.html",
   ordre: "ordre.html",
-  baron: "baron.html",
+  registre: "registre.html",
   galerie: "galerie.html",
   introuvable: "404.html",
 };
@@ -74,6 +74,33 @@ ${pied()}
 </body>
 </html>
 `;
+}
+
+// Anciennes adresses : une page de redirection pour ne pas casser les liens.
+const REDIRECTIONS = {
+  "baron.html": "registre.html",
+};
+
+for (const [ancienne, nouvelle] of Object.entries(REDIRECTIONS)) {
+  await writeFile(
+    join(racine, ancienne),
+    `<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<!-- Fichier généré par outils/prerendu.js. Ne pas éditer à la main. -->
+<title>Page déplacée · ${esc(site.nom)}</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="${esc(site.url + nouvelle)}">
+<meta http-equiv="refresh" content="0; url=${esc(nouvelle)}">
+</head>
+<body>
+<p>Cette page a déménagé : <a href="${esc(nouvelle)}">${esc(nouvelle)}</a>.</p>
+</body>
+</html>
+`
+  );
+  console.log(`${ancienne} → ${nouvelle}`);
 }
 
 for (const [module, fichier] of Object.entries(FICHIERS)) {

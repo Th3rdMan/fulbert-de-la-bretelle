@@ -208,14 +208,15 @@ main { display: block; padding-block: clamp(2rem, 5vw, 4.5rem) clamp(3rem, 7vw, 
 
 .nav-principale ul {
   list-style: none; margin: 0; padding: 0;
-  display: flex; gap: .15rem; flex-wrap: wrap;
+  display: flex; gap: .1rem; flex-wrap: nowrap;
 }
 .nav-principale a {
   display: block;
-  padding: .45rem .7rem;
+  padding: .45rem .55rem;
   font-family: var(--f-titre);
-  font-size: .8rem;
-  letter-spacing: .12em;
+  font-size: .78rem;
+  letter-spacing: .1em;
+  white-space: nowrap;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--ink-soft);
@@ -234,7 +235,7 @@ main { display: block; padding-block: clamp(2rem, 5vw, 4.5rem) clamp(3rem, 7vw, 
 
 .bouton-menu { display: none; }
 
-@media (max-width: 62rem) {
+@media (max-width: 68rem) {
   .bouton-menu { display: inline-grid; }
   .nav-principale {
     position: absolute; left: 0; right: 0; top: 100%;
@@ -460,7 +461,8 @@ main { display: block; padding-block: clamp(2rem, 5vw, 4.5rem) clamp(3rem, 7vw, 
 .frise-noeud::after {
   content: ""; position: absolute; inset: 3px; background: var(--gueules);
 }
-.frise-entree:last-child .frise-noeud::after { background: var(--sinople); }
+.frise-en-cours .frise-noeud::after { background: var(--sinople); }
+.lien-croise { margin: 1rem 0 0; }
 .frise-entree h2 { font-size: clamp(1.3rem, 1.1rem + .9vw, 1.8rem); margin-bottom: .75rem; }
 .frise-entree .recit { max-width: var(--mesure); }
 .frise-entree figure { margin: 1.5rem 0 0; max-width: 34rem; }
@@ -529,7 +531,7 @@ main { display: block; padding-block: clamp(2rem, 5vw, 4.5rem) clamp(3rem, 7vw, 
   margin: 2.5rem auto 0; max-width: 40rem;
   border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
 }
-.musee-registre div { flex: 1 1 10rem; padding: 1.1rem .5rem; text-align: center; }
+.musee-registre div { flex: 1 1 10rem; padding: 1.1rem .5rem; text-align: center; display: flex; flex-direction: column; justify-content: space-between; }
 .musee-registre div + div { border-left: 1px solid var(--rule); }
 .musee-registre dt { font-family: var(--f-titre); font-size: .68rem; letter-spacing: .2em; text-transform: uppercase; color: var(--ink-soft); }
 .musee-registre dd { margin: .2rem 0 0; font-family: var(--f-titre); font-size: 1.9rem; color: var(--ink); }
@@ -656,15 +658,8 @@ main { display: block; padding-block: clamp(2rem, 5vw, 4.5rem) clamp(3rem, 7vw, 
   border: 3px solid var(--or); background: var(--surface); object-fit: cover;
 }
 .baron-heros .presentation { text-align: left; }
+.baron-heros .chapeau { margin-inline: auto; }
 
-.avis-liste { list-style: none; padding: 0; margin: 0 auto; max-width: 40rem; }
-.avis-liste li {
-  display: grid; grid-template-columns: minmax(0, 13rem) minmax(0, 1fr); gap: .25rem 1.5rem;
-  padding: 1.1rem 0; border-bottom: 1px solid var(--rule);
-}
-.avis-liste a { font-family: var(--f-titre); font-size: .85rem; letter-spacing: .08em; text-decoration: none; }
-.avis-liste q { font-style: italic; quotes: "« " " »"; }
-@media (max-width: 36rem) { .avis-liste li { grid-template-columns: 1fr; } }
 
 /* --- Galerie ------------------------------------------------------------- */
 
@@ -725,7 +720,7 @@ html:not(.js) .apparait { opacity: 1; transform: none; }
 
 /* Sans JavaScript : pas de bascule de thème ni de menu repliable. */
 html:not(.js) .bouton-theme, html:not(.js) .bouton-menu { display: none; }
-@media (max-width: 62rem) {
+@media (max-width: 68rem) {
   html:not(.js) .site-entete .conteneur { flex-wrap: wrap; }
   html:not(.js) .nav-principale { display: block; position: static; box-shadow: none; border: 0; background: none; width: 100%; }
   html:not(.js) .nav-principale ul { flex-direction: row; padding: 0 0 .5rem; }
@@ -733,3 +728,39 @@ html:not(.js) .bouton-theme, html:not(.js) .bouton-menu { display: none; }
 }
 
 .galerie-section { margin-bottom: 0; }
+
+/* --- Charges et distinctions (accueil) ---------------------------------- */
+
+.liste-titres {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr));
+  gap: 0 2.5rem;
+}
+.liste-titres li { padding: .85rem 0 .9rem; border-bottom: 1px solid var(--rule); }
+.liste-titres strong { display: block; font-family: var(--f-titre); font-weight: 600; font-size: 1rem; letter-spacing: .03em; line-height: 1.35; }
+.liste-titres span { display: block; font-style: italic; color: var(--ink-soft); font-size: .92em; margin-top: .15rem; }
+.liste-titres .revolu strong { color: var(--ink-soft); font-weight: 500; }
+.mention-revolue {
+  display: inline-block; margin-top: .4rem;
+  font-family: var(--f-titre); font-style: normal; font-size: .62rem; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--ink-soft); border: 1px solid var(--rule); padding: .12rem .45rem; border-radius: 2px;
+}
+
+/* --- Registre des Morsures ---------------------------------------------- */
+
+.actes { list-style: none; margin: 0 auto; padding: 0; max-width: 44rem; display: grid; gap: 1.75rem; }
+.acte {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  outline: 1px solid var(--rule); outline-offset: 4px;
+  padding: 1.4rem clamp(1.1rem, 4vw, 2rem) 1.5rem;
+}
+.acte-entete { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem 1rem; border-bottom: 1px solid var(--rule); padding-bottom: .6rem; margin-bottom: .9rem; }
+.acte-entete .surtitre { margin: 0; }
+.acte-date { margin: 0; font-size: .88rem; font-style: italic; color: var(--ink-soft); }
+.acte-corps { margin: 0; display: grid; gap: .55rem; }
+.acte-corps div { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr); gap: 1rem; align-items: baseline; }
+.acte-corps dt { font-family: var(--f-titre); font-size: .7rem; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-soft); }
+.acte-corps dd { margin: 0; }
+.acte-victime { font-family: var(--f-titre); letter-spacing: .03em; }
+@media (max-width: 30rem) { .acte-corps div { grid-template-columns: 1fr; gap: 0; } }

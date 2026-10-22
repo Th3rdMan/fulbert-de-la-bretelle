@@ -14,8 +14,10 @@ Tout le contenu éditorial est dans `data/`. On n'édite jamais le HTML.
 | Exposer une ceinture confisquée    | `data/ceintures.js` |
 | Ajouter une illustration           | `data/galerie.js` (fichier image dans `assets/img/` ou URL) |
 | Ajouter un membre de l'Ordre       | `data/membres-ordre.js` |
+| Consigner une morsure du Baron     | `data/morsures.js` (à la fin du tableau) |
+| Ajouter une charge ou distinction  | `data/titres.js` (`actuel: false` pour une charge passée) |
 | Changer un avis du Baron           | `data/baron.js` |
-| Devise, adresse, charte, code, nombre de vitrines | `data/site.js` |
+| Devise, adresse, charte, code, emplacements libres du musée, sommaire | `data/site.js` |
 
 Les textes des aperçus de partage (Open Graph, Twitter) sont dans
 `data/site.js`, rubrique `partage`.

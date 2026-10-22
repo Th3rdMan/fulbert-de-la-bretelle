@@ -4,10 +4,15 @@
 //
 // Champs :
 //   id      identifiant unique, sans espace
-//   date    texte libre (« 3 frimaire », « Printemps »…). Vide : la page
-//           affiche « Chapitre N » à la place.
+//   date    date de l'épisode, texte libre (« 3 frimaire », « 13/10 »…),
+//           affichée en tête de l'entrée. Laisser "" tant qu'elle n'est pas
+//           connue : rien ne s'affiche à la place.
 //   titre   court
 //   recit   un ou plusieurs paragraphes (séparés par une ligne vide)
+//   enCours facultatif, true pour un épisode qui n'est pas terminé
+//           (affiché avec la mention « En cours »).
+//   chanson facultatif, identifiant (id) d'une chanson de data/chansons.js :
+//           crée un lien vers elle, et la chanson renvoie ici en retour.
 //   image   facultatif, URL
 //   legende facultatif, légende de l'image
 
@@ -67,6 +72,7 @@ Monsieur le Baron, consulté, n'a pas mordu. J'ai pris cela pour un oui.`,
   {
     id: "coup-d-etat-liarr",
     date: "",
+    chanson: "vive-le-roy",
     titre: "Le coup d'État d'Émile Liarr",
     recit: `Émile Liarr gardait la couronne depuis feu Ranxerox. On la lui avait prise ; il l'a reprise, depuis le Valégro, sans un canon, sans un tambour, sans une goutte de sang. Le trône est passé du cierge au bal en un seul jour.
 
@@ -87,6 +93,7 @@ Ma mission : que le Royaume entende ce qu'il doit entendre, en musique de préf�
   {
     id: "grande-termitiere",
     date: "",
+    chanson: "la-termitiere",
     titre: "Les cent étages de la Grande Termitière",
     recit: `J'ai gravi les cent étages de la Grande Termitière, sous les montagnes de Bananie, avec Thalassa et Felony, Monsieur le Baron sur l'épaule. Des araignées au dixième, des fourmis hautes comme un homme au cinquantième, une salamandre affamée tout là-haut, et pas un seul ascenseur.
 
@@ -95,6 +102,7 @@ Au centième, j'ai détaché ma ceinture et je l'ai clouée dans la pierre. Qui 
   {
     id: "ocarina-bananie",
     date: "",
+    enCours: true,
     titre: "En quête d'un ocarina de Bananie",
     recit: `Je cherche un ocarina de Bananie. Un barde qui possède une guitare, une épée et un kanard peut paraître comblé. Il ne l'est pas.
 

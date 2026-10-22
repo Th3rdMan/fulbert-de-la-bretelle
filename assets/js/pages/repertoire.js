@@ -1,6 +1,7 @@
 import { monterPage, site, esc, paragraphes, avisBaron, romain } from "../app.js";
 import { filet, icones } from "../ornements.js";
 import chansons from "../../../data/chansons.js";
+import chroniques from "../../../data/chroniques.js";
 
 const INTERTITRE = /^(\[.*\]|refrain\b.*)$/i;
 
@@ -37,6 +38,10 @@ export const rendre = () => `
         <h2 id="titre-${esc(c.id)}">${esc(c.titre)}</h2>
         <p class="meta">${[c.style, c.dedicataire && `Pour ${c.dedicataire}`].filter(Boolean).map((m) => `<span>${esc(m)}</span>`).join("")}</p>
         <div class="contexte">${paragraphes(c.contexte)}</div>
+        ${chroniques
+          .filter((ch) => ch.chanson === c.id)
+          .map((ch) => `<p class="lien-croise"><a class="lien-fleche" href="chroniques.html#${esc(ch.id)}">La chronique : ${esc(ch.titre)}</a></p>`)
+          .join("")}
 
         <div class="lecteur" data-suno="${esc(c.sunoId || "")}" data-titre="${esc(c.titre)}">
           <div class="actions">
