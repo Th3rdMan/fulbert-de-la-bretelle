@@ -19,7 +19,7 @@
 export default [
   {
     id: "la-termitiere",
-    titre: "Le Chant de la Termitière",
+    titre: "La Termitière",
     contexte: `Écrite au retour de la Grande Termitière, pour mes deux compagnons de cordée et pour tous ceux qui croient qu'on redescend d'une ascension avec plus que ce qu'on avait en montant.
 
 Cent étages, des araignées, des fourmis géantes, une salamandre, un trésor légendaire, un ocarina. Au bout du compte : une omelette aux champignons et une ceinture en moins.`,
@@ -31,7 +31,7 @@ Cent étages, des araignées, des fourmis géantes, une salamandre, un trésor l
   },
   {
     id: "vive-le-roy",
-    titre: "Vive le Roy",
+    titre: "Vive le Roy Emile",
     contexte: `Écrite pour le retour du Roy Émile sur le trône. Un peuple qui votait et priait pendant que la couronne prenait la poussière, un roi qui aime la danse et les festins, une couronne prise puis rendue sans qu'une goutte de sang ne coule.
 
 Je l'ai chantée le jour de mon ralliement. Elle se danse, elle se boit, elle se crie.`,
@@ -43,7 +43,7 @@ Je l'ai chantée le jour de mon ralliement. Elle se danse, elle se boit, elle se
   },
   {
     id: "port-magmor",
-    titre: "Chanson de Port Magmor",
+    titre: "Port Magmor",
     contexte: `Ma première chanson ici, écrite à l'auberge du Rhum à ranger pour la ville qui m'a accueilli. Un rocher, une taverne, des tables trop petites pour la foule, des pirates et des seigneurs qui boivent côte à côte jusqu'à l'aube.
 
 On y perd tout, même son or. On y revient quand même.`,
