@@ -22,7 +22,7 @@ export default [
     titre: "Pleurez, pauvres pétunias",
     contexte: `Le 13 octobre, à midi, le Capitaine Sysson a tiré quatre ogives nucléaires sur Structural. La première a rasé une rue, la deuxième un champ de rien, la troisième s'est perdue en chemin, la quatrième a fauché un parterre de fleurs. Bilan humain : personne. Madame Karen Vanderbilt, bourgmestre de Structural, a crié au crime de guerre sur la place publique. J'ai fait remarquer que la population civile n'avait même pas renversé son thé. Elle m'a reproché mon manque d'humanité.
 
-Je lui ai répondu en musique, le soir même, debout sur une table du Rhum à ranger, un brassard de crêpe noir au bras. Les dons sont allés à Structural. Monsieur le Baron veillait sur le chapeau, un minuscule nœud noir autour du cou.`,
+Je lui ai répondu en musique le jour même, debout sur une table du Rhum à ranger, un brassard de crêpe noir au bras. Les dons sont allés à Structural. Monsieur le Baron veillait sur le chapeau, un minuscule nœud noir autour du cou.`,
     dedicataire: "Les victimes de Structural, et Madame la Bourgmestre",
     style: "Troubadour, gigue baroque",
     sunoId: "a85c0c3d-8be4-432d-955f-c1e3dfbb59bd",
