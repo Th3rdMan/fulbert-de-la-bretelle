@@ -764,3 +764,10 @@ html:not(.js) .bouton-theme, html:not(.js) .bouton-menu { display: none; }
 .acte-corps dd { margin: 0; }
 .acte-victime { font-family: var(--f-titre); letter-spacing: .03em; }
 @media (max-width: 30rem) { .acte-corps div { grid-template-columns: 1fr; gap: 0; } }
+
+/* Petits écrans : le nom passe sur deux lignes plutôt que de déborder. */
+@media (max-width: 30rem) {
+  .site-entete .conteneur { gap: .6rem; }
+  .marque { white-space: normal; min-width: 0; font-size: .88rem; line-height: 1.15; gap: .5rem; }
+  .marque img { width: 2.1rem; height: 2.1rem; }
+}
