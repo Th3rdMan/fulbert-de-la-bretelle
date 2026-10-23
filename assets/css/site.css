@@ -18,7 +18,10 @@
   --or-texte: #7a5810;
   --or-clair: #d9b85c;
   --vitrine-fond: #20352a;
-  --vitrine-velours: #2c4a3a;
+  --vitrine-velours: #6b1521;
+  --velours-terne: #5a5352;
+  --or-terne: #9c9175;
+  --tampon: #b0222c;
   --sur-fonce: #f6efdc;
   --ombre: 0 1px 2px rgb(60 40 10 / .08), 0 8px 28px -12px rgb(60 40 10 / .25);
   --focus: #1c5638;
@@ -51,7 +54,10 @@
     --or-texte: #e2c174;
     --or-clair: #e8c978;
     --vitrine-fond: #070b1d;
-    --vitrine-velours: #4a1626;
+    --vitrine-velours: #5a1424;
+    --velours-terne: #2f2d36;
+    --or-terne: #7d7663;
+    --tampon: #e2646f;
     --sur-fonce: #f3e9cf;
     --ombre: 0 1px 2px rgb(0 0 0 / .3), 0 10px 30px -12px rgb(0 0 0 / .6);
     --focus: #e8c978;
@@ -75,7 +81,10 @@
   --or-texte: #e2c174;
   --or-clair: #e8c978;
   --vitrine-fond: #070b1d;
-  --vitrine-velours: #4a1626;
+  --vitrine-velours: #5a1424;
+  --velours-terne: #2f2d36;
+  --or-terne: #7d7663;
+  --tampon: #e2646f;
   --sur-fonce: #f3e9cf;
   --ombre: 0 1px 2px rgb(0 0 0 / .3), 0 10px 30px -12px rgb(0 0 0 / .6);
   --focus: #e8c978;
@@ -769,4 +778,85 @@ html:not(.js) .bouton-theme, html:not(.js) .bouton-menu { display: none; }
   .site-entete .conteneur { gap: .6rem; }
   .marque { white-space: normal; min-width: 0; font-size: .88rem; line-height: 1.15; gap: .5rem; }
   .marque img { width: 2.1rem; height: 2.1rem; }
+}
+
+/* --- Musée : vitrines de la Salle I ------------------------------------- */
+
+.vitrine-caisse { outline: 1px solid var(--or); outline-offset: 4px; }
+.vitrine-interieur {
+  background:
+    radial-gradient(ellipse 85% 55% at 50% -5%, rgb(255 226 190 / .26), transparent 70%),
+    radial-gradient(ellipse 70% 45% at 50% 22%, rgb(255 255 255 / .08), transparent 70%),
+    radial-gradient(ellipse at 50% 100%, rgb(0 0 0 / .4), transparent 60%),
+    var(--vitrine-velours);
+  box-shadow: inset 0 0 0 1px rgb(232 201 120 / .55), inset 0 10px 24px rgb(0 0 0 / .25);
+}
+.vitrine-mention {
+  position: absolute; left: 0; right: 0; bottom: 5%; z-index: 3; margin: 0; text-align: center;
+  font-family: var(--f-titre); font-size: .62rem; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--or-clair); opacity: .8;
+}
+.vitrine-libre .vitrine-socle { bottom: 16%; }
+
+/* --- Musée : Salle annexe ----------------------------------------------- */
+
+.salle-annexe {
+  background: color-mix(in srgb, var(--bg-deep) 80%, var(--velours-terne) 20%);
+  margin-top: 0;
+}
+.salle-annexe .salle-titre p:last-child { max-width: 40rem; margin-inline: auto; }
+.vitrines-annexe { grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr)); }
+.vitrine-refusee .vitrine-caisse {
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(160deg, var(--or-terne), color-mix(in srgb, var(--or-terne) 70%, #000));
+  outline-color: var(--or-terne);
+  box-shadow: none;
+}
+.vitrine-refusee .vitrine-interieur {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgb(255 255 255 / .06), transparent 70%),
+    radial-gradient(ellipse at 50% 100%, rgb(0 0 0 / .3), transparent 60%),
+    var(--velours-terne);
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / .12);
+}
+.vitrine-refusee .vitrine-interieur::after { border-color: rgb(255 255 255 / .1); }
+.vitrine-refusee .vitrine-piece { width: 40%; color: #cfc8bb; opacity: .7; }
+.vitrine-refusee .vitrine-socle { color: #cfc8bb; opacity: .3; }
+.vitrine-refusee .vitrine-pied { background: color-mix(in srgb, var(--or-terne) 55%, #000); }
+
+.tampon {
+  position: absolute; top: 46%; left: 50%; z-index: 3; margin: 0;
+  transform: translate(-50%, -50%) rotate(-11deg);
+  padding: .35rem .85rem;
+  border: 3px solid var(--tampon);
+  outline: 1px solid var(--tampon); outline-offset: 3px;
+  color: var(--tampon);
+  background: color-mix(in srgb, var(--surface) 90%, transparent);
+  box-shadow: 0 2px 10px rgb(0 0 0 / .3);
+  font-family: var(--f-titre); font-weight: 700; font-size: clamp(.95rem, .8rem + .7vw, 1.3rem);
+  letter-spacing: .16em; text-transform: uppercase; white-space: nowrap;
+  opacity: .95;
+}
+
+.cartel-refus {
+  width: 100%;
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+  text-align: left; padding: .8rem .9rem;
+}
+.cartel-refus .cartel-identite { padding-right: .85rem; }
+.cartel-refus .cartel-titre { font-size: .86rem; }
+.cartel-motif {
+  margin: 0; padding-left: .85rem; border-left: 1px solid var(--rule);
+  font-size: .84rem; line-height: 1.4; font-style: italic; color: var(--ink);
+}
+.cartel-motif span {
+  display: block; font-style: normal; font-family: var(--f-titre); font-size: .62rem; letter-spacing: .18em;
+  text-transform: uppercase; color: var(--tampon); margin-bottom: .2rem;
+}
+.salle-mention { text-align: center; margin: clamp(2rem, 5vw, 3rem) 0 0; font-style: italic; color: var(--ink-soft); font-size: .92rem; }
+
+@media (max-width: 30rem) {
+  .cartel-refus { grid-template-columns: 1fr; }
+  .cartel-refus .cartel-identite { padding-right: 0; }
+  .cartel-motif { border-left: 0; border-top: 1px solid var(--rule); padding: .6rem 0 0; margin-top: .6rem; }
 }

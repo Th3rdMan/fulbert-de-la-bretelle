@@ -63,6 +63,22 @@ export const ceinture = () =>
      </g>`
   );
 
+// Chausses à crevés, pour les prises de la Salle annexe.
+export const chausses = () =>
+  svg(
+    "0 0 100 100",
+    `<g style="fill:currentColor;fill-opacity:.18;stroke:currentColor" stroke-width="1.6" stroke-linejoin="round">
+       <rect x="27" y="14" width="46" height="8" rx="1.5"/>
+       <path d="M27 22 C16 34 13 54 19 72 L46 72 C47 58 49 42 50 30 C51 42 53 58 54 72 L81 72 C87 54 84 34 73 22 Z"/>
+       <rect x="18" y="72" width="29" height="6" rx="1.5"/>
+       <rect x="53" y="72" width="29" height="6" rx="1.5"/>
+     </g>
+     <g style="fill:none;stroke:currentColor;opacity:.6" stroke-width="1">
+       <path d="M24 34 C24 48 25 60 28 71M34 24 C32 40 32 56 35 71M40 24 C40 40 41 56 42 71"/>
+       <path d="M76 34 C76 48 75 60 72 71M66 24 C68 40 68 56 65 71M60 24 C60 40 59 56 58 71"/>
+     </g>`
+  );
+
 export const icones = {
   soleil: svg(
     "0 0 24 24",

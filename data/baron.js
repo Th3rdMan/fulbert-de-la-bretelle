@@ -27,7 +27,7 @@ On dit en ville que c'est lui qui décide. C'est faux. Je décide, puis il me mo
     },
     musee: {
       section: "Le Musée de la Ceinture",
-      texte: "Le seul musée de Ruthvénie où l'on ne risque pas de casser quelque chose.",
+      texte: "Six fois il a fait tomber des chausses, et pas une ne compte. Moi, je mords, et ça compte toujours.",
     },
     ordre: {
       section: "L'Ordre de la Ceinture",

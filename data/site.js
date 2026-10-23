@@ -77,10 +77,36 @@ Monsieur le Baron, mon kanard, relit tout. Il n'approuve rien.`,
 
   musee: {
     // Nombre de vitrines vides présentées après les pièces exposées. La
-    // salle grandit d'elle-même : chaque ceinture ajoutée dans
-    // data/ceintures.js occupe une vitrine, et ces emplacements libres
-    // restent toujours à la suite.
+    // salle grandit d'elle-même : chaque ceinture (data/ceintures.js) ou
+    // prise homologuée (data/prises.js) occupe une vitrine, et ces
+    // emplacements libres restent toujours à la suite.
     emplacementsLibres: 3,
+
+    surtitre: "Castel Bretelle · Aile des collections",
+    titre: "Le Musée de la Ceinture",
+    // Chapeau d'accueil. {n} est remplacé par le nombre de pièces exposées.
+    chapeauVide: "Le Musée de la Ceinture conserve et présente les ceintures confisquées par l'Ordre de la Ceinture au terme d'un assaut loyal. Chaque vitrine attend sa pièce. La collection commence bientôt.",
+    chapeau: "Le Musée de la Ceinture conserve et présente les ceintures confisquées par l'Ordre de la Ceinture au terme d'un assaut loyal. Pièces exposées à ce jour : {n}.",
+
+    salle: {
+      surtitre: "Salle I",
+      titre: "Ceintures des puissants",
+      chapeau: "Titres, charges et dignités du Royaume et d'ailleurs.",
+      vitrineVide: "Emplacement réservé",
+    },
+
+    salleAnnexe: {
+      surtitre: "Salle annexe · accès par l'escalier de service",
+      titre: "Prises non homologuées",
+      // {N} est remplacé par le nombre de prises non homologuées, en toutes
+      // lettres (« Six », « Sept »…).
+      chapeau: "{N} chausses sont tombées sous la lame de l'Ordre ; aucune ne satisfait l'article premier du Code, qui veut qu'on ne vise que ceux qui portent un titre ou une charge. Le Conservateur refuse l'exposition. Le Chevalier conteste. Le dossier est en instance.",
+      tampon: "Non homologuée",
+      libelleMotif: "Motif du refus",
+      mention: "Les pièces de cette salle ne sont pas comptées dans la collection.",
+    },
+
+    avertissement: "Les pièces sont présentées dans l'ordre de leur acquisition. Il est interdit de toucher les vitrines. Monsieur le Baron assure la surveillance des salles.",
   },
 
   ordre: {
