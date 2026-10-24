@@ -2,6 +2,14 @@
 // L'ordre du tableau fait foi : la première entrée est la plus ancienne.
 // Pour ajouter un épisode, ajoute un objet à la fin.
 //
+// Ce n'est pas un résumé des chansons ni des posts du forum : Fulbert écrit
+// son autobiographie en direct, au présent ou au passé proche, depuis
+// l'endroit où il se trouve. Deux ou trois paragraphes courts au plus, au
+// moins un détail que lui seul pouvait raconter, jamais de citation de ses
+// propres chansons ou discours (le champ « chanson » fait le lien). Il se
+// contredit d'une entrée à l'autre et ne le corrige jamais. On ne garde que
+// ce qui a changé sa vie.
+//
 // Champs :
 //   id      identifiant unique, sans espace
 //   date    date de l'épisode, texte libre (« 3 frimaire », « 13/10 »…),
@@ -21,62 +29,54 @@ export default [
     id: "arrivee-port-magmor",
     date: "",
     titre: "Arrivée à Port Magmor",
-    recit: `J'ai débarqué à Port Magmor avec une épée d'emprunt, une guitare sans nom et un kanard qui n'avait rien demandé. J'ai pris une chambre à l'auberge du Rhum à ranger, au-dessus de la salle commune, ce qui m'a permis de juger le public avant qu'il ne me juge.
+    recit: `J'écris sur le comptoir du Rhum à ranger, parce que la table qu'on m'a donnée est trop petite pour un homme et sa plume. Le tavernier me regarde de travers. Il a ses raisons : Monsieur le Baron vient de lui mordre la main, parce qu'il a servi la bière avant le vin.
 
-Le premier soir, j'ai chanté. Le deuxième soir, on m'a demandé de chanter moins fort. Le troisième soir, Monsieur le Baron a mordu le tavernier, et nous avons été adoptés.`,
+Je croyais qu'on allait nous jeter dehors. On nous a donné une chambre. Je ne comprends rien à cette ville, et elle me plaît déjà.
+
+Le hareng fumé de la maison a un goût de goudron. J'en ai repris deux fois. Le Baron, pas une : il a des principes.`,
   },
   {
     id: "ruban-bicolore",
     date: "",
     titre: "Le Ruban Bicolore",
-    recit: `On m'a remis le Ruban Bicolore. Je le porte avec la modestie qui me caractérise, c'est-à-dire bien en vue et en le mentionnant souvent.
+    recit: `Je sors de l'Université avec le Ruban Bicolore épinglé sur le cœur, un peu à gauche, là où il se voit le mieux. L'examinateur m'a demandé si c'était bien ma deuxième tentative. J'ai répondu que la première était un échauffement. Il a écrit quelque chose dans la marge.
 
-Monsieur le Baron a tenté de le manger. Je considère qu'il s'agit d'un hommage.`,
+L'épingle me gratte à travers le pourpoint depuis midi. Je ne l'enlèverai pas. Monsieur le Baron a essayé de la manger pendant la remise ; l'assistance a cru qu'il saluait.`,
+    image: "",
+    legende: "Le Ruban Bicolore, dans son écrin, avec le parchemin de l'examen.",
   },
   {
     id: "castel-bretelle",
     date: "",
-    titre: "La construction du Castel Bretelle",
-    recit: `Un homme de qualité ne peut pas loger éternellement au-dessus d'une salle commune. J'ai fait bâtir le Castel Bretelle juste à côté de la fontaine, pour que les passants aient quelque chose à regarder en buvant.
+    titre: "Le Castel Bretelle",
+    recit: `Ce soir, je dors chez moi. Le Castel Bretelle tient debout, juste à côté de la fontaine, avec une tour, parce qu'un homme sans tour n'est qu'un locataire. Les maçons sont partis avec mes trois derniers fromages ; je suppose que c'était compris dans le prix.
 
-Il y a une tour, parce qu'il faut une tour. Monsieur le Baron a choisi sa chambre le premier. C'était la mienne.`,
+Monsieur le Baron a fait le tour des pièces et il a choisi la mienne. Je me suis replié dans la tour. Elle est froide, elle a des courants d'air, et j'y entends la fontaine toute la nuit. Je n'ai jamais été aussi heureux.`,
     image: "https://i.ibb.co/kg1hv3GW/Le-Castel-Bretelle-au-coucher-du-soleil.png",
     legende: "Le Castel Bretelle au coucher du soleil, vu depuis la fontaine.",
   },
   {
     id: "la-korsaire",
     date: "",
-    titre: "La Korsaire, offerte par Dame Korail",
-    recit: `Dame Korail m'a forgé une épée longue et me l'a offerte. Je l'ai appelée La Korsaire. Elle est droite, elle est juste, elle ne ment jamais : tout ce que je ne suis pas, et c'est pour cela que nous nous entendons.
+    titre: "La Korsaire, et le pavillon de Dame Korail",
+    recit: `Dame Korail m'a mis La Korsaire dans les mains ce matin, encore tiède de la forge. Je l'ai tenue longtemps sans rien dire, et elle a cru qu'elle ne me plaisait pas. Je cherchais seulement un mot à sa hauteur. Pour une fois, je n'en avais pas.
 
-J'ai promis à Dame Korail de ne jamais la déshonorer. Je n'ai pas précisé à quelle échéance.`,
+Dans la foulée, je suis entré au Royaume Pirate de Ruthvénie. Je ne sais plus si c'est moi qui ai demandé ou elle qui a proposé : j'ai dit oui avant la fin de la phrase, comme on attrape une corde.
+
+Je lui dois l'épée et le pavillon, et j'ignore encore comment on rembourse ce genre de dette. Monsieur le Baron s'est endormi sur le fourreau, ce qui, chez lui, vaut un serment.`,
     image: "assets/img/korsaire-realiste.jpg",
     legende: "La Korsaire, sur velours.",
-  },
-  {
-    id: "intendant-crab-key",
-    date: "",
-    titre: "Intendant de Crab Key",
-    recit: `On m'a nommé Intendant de Crab Key. J'ai étudié les finances de la province pendant une nuit entière, à la chandelle, avec Monsieur le Baron sur les genoux du registre.
-
-J'en ai tiré des réformes fiscales audacieuses. Je ne dirai pas que tout le monde les a comprises. Je dirai que personne ne les a contestées en face.`,
-  },
-  {
-    id: "royaume-pirate",
-    date: "",
-    titre: "Entrée dans le Royaume Pirate de Ruthvénie",
-    recit: `J'ai rejoint le Royaume Pirate de Ruthvénie. Un royaume pirate, c'est un royaume où l'on admet franchement ce que les autres font en cachette. J'y ai trouvé ma place.
-
-Monsieur le Baron, consulté, n'a pas mordu. J'ai pris cela pour un oui.`,
   },
   {
     id: "coup-d-etat-liarr",
     date: "",
     chanson: "vive-le-roy",
     titre: "Le coup d'État d'Émile Liarr",
-    recit: `Émile Liarr gardait la couronne depuis feu Ranxerox. On la lui avait prise ; il l'a reprise, depuis le Valégro, sans un canon, sans un tambour, sans une goutte de sang. Le trône est passé du cierge au bal en un seul jour.
+    recit: `Ce matin, le Royaume avait deux rois, ou aucun, selon la personne qu'on interrogeait. À midi, Émile Liarr avait repris la couronne depuis le Valégro, sans un coup de feu. Je n'ai rien vu : j'étais au fond d'une taverne, à attendre qu'on vienne me dire qui avait gagné.
 
-Il y a eu des heures où chacun regardait ses voisins pour savoir de quel côté se tenir. Moi, j'ai regardé Monsieur le Baron. Puis je me suis rallié à la Couronne, et je me suis proposé comme premier chevalier. J'ai écrit une chanson pour l'occasion, parce qu'un ralliement sans chanson n'est qu'un changement d'avis.`,
+Autour de moi, chacun regardait son voisin. Moi, je regardais mon assiette de pieds de cochon, et j'ai compris qu'un homme ne reste pas neutre devant des pieds de cochon. Je me suis rallié par écrit, devant tout le Royaume. C'est fait. Je ne jure qu'une fois.
+
+Monsieur le Baron a marché dans l'encrier et il a signé à côté de moi.`,
     image: "https://i.ibb.co/6cDjRdkL/Le-Retour-du-Roy-en-Fresque.png",
     legende: "Le Retour du Roy, fresque.",
   },
@@ -84,9 +84,11 @@ Il y a eu des heures où chacun regardait ses voisins pour savoir de quel côté
     id: "ministre-information",
     date: "",
     titre: "Ministre de l'Information",
-    recit: `Me voici Ministre de l'Information, à la tête de la Commanderie de la Musique et des Esgourdes. Le titre est long, je l'ai fait graver en entier.
+    recit: `Me voici Ministre de l'Information, à la tête de la Commanderie de la Musique et des Esgourdes. On m'a donné un bureau, une tribune et un tabouret qui boite. J'ai gardé le tabouret : un homme d'État doit rester en mouvement.
 
-Ma mission : que le Royaume entende ce qu'il doit entendre, en musique de préférence. Les esgourdes du peuple sont désormais sous ma responsabilité. Je les traite avec respect et à un volume raisonnable.`,
+Je n'ai jamais eu besoin de repasser un examen de ma vie, et cela se voit dans ma façon de tenir une plume. Mon premier communiqué tient en une page, le deuxième en onze. Je commence à comprendre le métier.
+
+Monsieur le Baron a pris la tribune. Je parle depuis le tabouret.`,
     image: "https://i.ibb.co/7xZLYhWz/fulbert-ministre-250x400.jpg",
     legende: "Au pupitre du Ministère, dans l'exercice de mes fonctions.",
   },
@@ -95,17 +97,20 @@ Ma mission : que le Royaume entende ce qu'il doit entendre, en musique de préf�
     date: "",
     chanson: "la-termitiere",
     titre: "Les cent étages de la Grande Termitière",
-    recit: `J'ai gravi les cent étages de la Grande Termitière, sous les montagnes de Bananie, avec Thalassa et Felony, Monsieur le Baron sur l'épaule. Des araignées au dixième, des fourmis hautes comme un homme au cinquantième, une salamandre affamée tout là-haut, et pas un seul ascenseur.
+    recit: `J'écris dans l'escalier de la descente, vers le soixantième étage, une main sur la plume et l'autre sur mes chausses. Ma ceinture est restée là-haut, clouée dans la pierre. Je l'ai déposée, je ne l'ai pas perdue, et je refuse qu'on en discute.
 
-Au centième, j'ai détaché ma ceinture et je l'ai clouée dans la pierre. Qui veut la reprendre n'a qu'à monter. Le fondateur de l'Ordre de la Ceinture a donc perdu la sienne avant d'en prendre une seule. J'y vois la preuve de mon intégrité : je ne demande à personne un sacrifice que je n'ai pas consenti moi-même.`,
+En montant, des araignées sont reparties sans leurs chausses ; j'ignorais qu'elles en portaient. Puis un Gorille Géant, qui n'en portait pas du tout : je lui ai taillé une ceinture dans sa propre peau, pour la lui retirer dans les règles. Je crois que je viens d'inventer une technique. Je lui trouverai un nom quand j'aurai les deux mains libres.
+
+Thalassa recompte nos fioles, Felony recompte ses phalanges. Monsieur le Baron a mangé un œuf de termite et ne m'en a pas proposé.`,
   },
   {
-    id: "ocarina-bananie",
+    id: "chute-du-roy",
     date: "",
-    enCours: true,
-    titre: "En quête d'un ocarina de Bananie",
-    recit: `Je cherche un ocarina de Bananie. Un barde qui possède une guitare, une épée et un kanard peut paraître comblé. Il ne l'est pas.
+    titre: "La chute du Roy",
+    recit: `J'écris couché, le bras droit en écharpe, de la main gauche, d'où l'écriture. Un cheval m'a renversé, une vache m'a piétiné, et deux moutons ont achevé le travail. Je n'ai jamais eu peur des bêtes.
 
-La quête est en cours. Monsieur le Baron trouve que l'ocarina est un instrument de basse-cour. Je lui ai fait remarquer qu'il en venait. Il m'a mordu.`,
+Pendant ce temps, Wenceslas a pris le trône à Émile, et l'on m'a demandé de jurer fidélité au nouveau maître. J'ai juré il y a quatre jours, par écrit, devant tout le Royaume : je ne jure pas deux fois dans la même semaine. J'ai remis ma charge. J'attends une décision, et personne ne m'en donne, ce qui est presque plus vexant qu'une destitution.
+
+Monsieur le Baron monte la garde sur mon oreiller et siffle dès qu'on approche. Le médecin m'ausculte depuis le couloir. Ma soupe arrive froide, glissée sous la porte.`,
   },
 ];
