@@ -17,6 +17,8 @@ const total = pieces.length;
 
 const NOMBRES = ["Zéro", "Une", "Deux", "Trois", "Quatre", "Cinq", "Six", "Sept", "Huit", "Neuf", "Dix", "Onze", "Douze"];
 const enLettres = (n) => NOMBRES[n] || String(n);
+// Le motif commence toujours par une majuscule après « Motif du refus : ».
+const majuscule = (t) => (t ? t.charAt(0).toUpperCase() + t.slice(1) : "");
 
 // Vitrine vide, non numérotée : la salle en garde toujours quelques-unes
 // après la dernière pièce exposée.
@@ -69,7 +71,7 @@ const vitrineRefusee = (p, i) => `<li class="prise-refusee apparait" id="${esc(p
         <p class="cartel-detail">${esc(p.lieu)} · ${esc(p.date)}</p>
         <span class="sr-only">${esc(m.salleAnnexe.tampon)}.</span>
       </div>
-      <p class="cartel-motif"><span>${esc(m.salleAnnexe.libelleMotif)} :</span> ${esc(p.motif)}</p>
+      <p class="cartel-motif"><span>${esc(m.salleAnnexe.libelleMotif)} :</span> ${esc(majuscule(p.motif))}</p>
     </div>
   </li>`;
 
@@ -137,7 +139,7 @@ export function apres() {
       img.src = p.image;
       img.alt = b.querySelector("img").alt;
       dialogue.querySelector("figcaption strong").textContent = `${p.numero} · ${p.nom}`;
-      dialogue.querySelector("figcaption span").textContent = `${m.salleAnnexe.libelleMotif} : ${p.motif}`;
+      dialogue.querySelector("figcaption span").textContent = `${m.salleAnnexe.libelleMotif} : ${majuscule(p.motif)}`;
       declencheur = b;
       dialogue.showModal();
     });
