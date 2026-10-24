@@ -75,6 +75,19 @@ Monsieur le Baron, mon kanard, relit tout. Il n'approuve rien.`,
     { nom: "L'Habit de Gala", nature: "Tenue d'apparat", note: "Pour les occasions où le velours bleu ne suffit plus." },
   ],
 
+  // Encart « État de service » de l'accueil : rubriques dans l'ordre
+  // d'affichage. « categorie » renvoie au champ du même nom dans
+  // data/titres.js.
+  etatDeService: {
+    titre: "État de service",
+    rubriques: [
+      { categorie: "charges", titre: "Charges" },
+      { categorie: "distinctions", titre: "Distinctions" },
+      { categorie: "exploits", titre: "Exploits" },
+      { categorie: "appartenances", titre: "Appartenances" },
+    ],
+  },
+
   musee: {
     // Nombre de vitrines vides présentées après les pièces exposées. La
     // salle grandit d'elle-même : chaque ceinture (data/ceintures.js) ou

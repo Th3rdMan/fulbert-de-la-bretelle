@@ -45,18 +45,27 @@ export const rendre = () => `
   </section>
 
   <section class="titres section apparait" aria-labelledby="titre-titres">
-    <div class="titre-section">${fleuron()}<h2 id="titre-titres">Charges et distinctions</h2></div>
-    <ul class="liste-titres">
-      ${titres
-        .map(
-          (t) => `<li class="${t.actuel ? "" : "revolu"}">
+    <div class="titre-section">${fleuron()}<h2 id="titre-titres">${esc(site.etatDeService.titre)}</h2></div>
+    ${site.etatDeService.rubriques
+      .map((r) => ({ ...r, entrees: titres.filter((t) => t.categorie === r.categorie) }))
+      .filter((r) => r.entrees.length)
+      .map(
+        (r) => `<div class="rubrique-titres">
+      <h3 id="rubrique-${esc(r.categorie)}">${esc(r.titre)}</h3>
+      <ul class="liste-titres" aria-labelledby="rubrique-${esc(r.categorie)}">
+        ${r.entrees
+          .map(
+            (t) => `<li class="${t.actuel ? "" : "revolu"}">
             <strong>${esc(t.titre)}</strong>
             ${t.precision ? `<span>${esc(t.precision)}</span>` : ""}
             ${t.actuel ? "" : `<em class="mention-revolue">Charge passée</em>`}
           </li>`
-        )
-        .join("")}
-    </ul>
+          )
+          .join("")}
+      </ul>
+    </div>`
+      )
+      .join("")}
   </section>
 
   <div class="deux-colonnes section">
