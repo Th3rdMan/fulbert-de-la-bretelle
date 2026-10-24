@@ -101,13 +101,13 @@ Monsieur le Baron a pris la tribune. Je parle depuis le tabouret.`,
 
 En montant, des araignées sont reparties sans leurs chausses ; j'ignorais qu'elles en portaient. Puis un Gorille Géant, qui n'en portait pas du tout : je lui ai taillé une ceinture dans sa propre peau, pour la lui retirer dans les règles. Je crois que je viens d'inventer une technique. Je lui trouverai un nom quand j'aurai les deux mains libres.
 
-Thalassa recompte nos fioles, Felony recompte ses phalanges. Monsieur le Baron a mangé un œuf de termite et ne m'en a pas proposé.`,
+J'étais venu dans la région pour trouver un ocarina. Je n'en ai pas vu l'ombre d'un, ni en bas, ni en haut. Thalassa recompte nos fioles, Felony recompte ses phalanges, et Monsieur le Baron a mangé un œuf de termite sans m'en proposer.`,
   },
   {
     id: "chute-du-roy",
     date: "",
     titre: "La chute du Roy",
-    recit: `J'écris couché, le bras droit en écharpe, de la main gauche, d'où l'écriture. Un cheval m'a renversé, une vache m'a piétiné, et deux moutons ont achevé le travail. Je n'ai jamais eu peur des bêtes.
+    recit: `J'écris couché, le bras droit en écharpe, de la main gauche, d'où l'écriture. Des voleurs de bétail m'ont attaqué ; je les ai occis, puis déculottés, comme il se doit. Le troupeau n'y a pas vu un sauvetage : un cheval m'a renversé, une vache m'a piétiné, et deux moutons ont achevé le travail. Je n'ai jamais eu peur des bêtes.
 
 Pendant ce temps, Wenceslas a pris le trône à Émile, et l'on m'a demandé de jurer fidélité au nouveau maître. J'ai juré il y a quatre jours, par écrit, devant tout le Royaume : je ne jure pas deux fois dans la même semaine. J'ai remis ma charge. J'attends une décision, et personne ne m'en donne, ce qui est presque plus vexant qu'une destitution.
 
