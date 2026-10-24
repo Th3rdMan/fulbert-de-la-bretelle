@@ -42,7 +42,7 @@ Le hareng fumé de la maison a un goût de goudron. J'en ai repris deux fois. Le
     recit: `Je sors de l'Université avec le Ruban Bicolore épinglé sur le cœur, un peu à gauche, là où il se voit le mieux. L'examinateur m'a demandé si c'était bien ma deuxième tentative. J'ai répondu que la première était un échauffement. Il a écrit quelque chose dans la marge.
 
 L'épingle me gratte à travers le pourpoint depuis midi. Je ne l'enlèverai pas. Monsieur le Baron a essayé de la manger pendant la remise ; l'assistance a cru qu'il saluait.`,
-    image: "",
+    image: "assets/img/ruban-bicolore.jpg",
     legende: "Le Ruban Bicolore, dans son écrin, avec le parchemin de l'examen.",
   },
   {
