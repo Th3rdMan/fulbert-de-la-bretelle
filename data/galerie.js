@@ -41,6 +41,13 @@ export default [
     alt: "Épée longue à garde dorée ouvragée et poignée rouge, posée sur un velours cramoisi près d'un chandelier.",
   },
   {
+    id: "ruban-bicolore",
+    src: "assets/img/ruban-bicolore.jpg",
+    titre: "Le Ruban Bicolore",
+    legende: "Obtenu à l'Université, au terme d'un examen que j'ai repassé. Je le porte avec la modestie qui me caractérise, c'est-à-dire bien en vue.",
+    alt: "Barrette de décoration à ruban vert et rouge dans un cadre de laiton, posée sur un velours cramoisi.",
+  },
+  {
     id: "fresque",
     src: "https://i.ibb.co/6cDjRdkL/Le-Retour-du-Roy-en-Fresque.png",
     titre: "Le Retour du Roy",
