@@ -1,5 +1,5 @@
 import { monterPage, site, esc, avisBaron, numero } from "../app.js";
-import { filet, socle, ceinture, chausses } from "../ornements.js";
+import { filet, socle, ceinture, chausses, icones } from "../ornements.js";
 import ceintures from "../../../data/ceintures.js";
 import prises from "../../../data/prises.js";
 
@@ -10,7 +10,7 @@ const pieces = [
   ...ceintures,
   ...prises
     .filter((p) => p.homologuee)
-    .map((p) => ({ id: p.id, porteur: p.nom, titre: p.numero, lieu: p.lieu, date: p.date })),
+    .map((p) => ({ id: p.id, porteur: p.nom, titre: p.numero, lieu: p.lieu, date: p.date, image: p.image })),
 ];
 const refusees = prises.filter((p) => !p.homologuee);
 const total = pieces.length;
@@ -52,15 +52,16 @@ const vitrine = (piece, i) => {
   </li>`;
 };
 
-const vitrineRefusee = (p) => `<li class="vitrine vitrine-refusee apparait" id="${esc(p.id)}">
-    <div class="vitrine-caisse">
-      <div class="vitrine-interieur">
-        <div class="vitrine-piece">${chausses()}</div>
-        <div class="vitrine-socle">${socle()}</div>
-        <p class="tampon" aria-hidden="true">${esc(m.salleAnnexe.tampon)}</p>
-      </div>
-    </div>
-    <div class="vitrine-pied" aria-hidden="true"></div>
+// Les visuels de la Salle annexe sont déjà des vitrines avec leur cartel
+// gravé : on les montre tels quels, agrandissables au clic.
+const vitrineRefusee = (p, i) => `<li class="prise-refusee apparait" id="${esc(p.id)}">
+    ${
+      p.image
+        ? `<button type="button" class="prise-visuel" data-index="${i}" aria-label="Agrandir : ${esc(p.nom)}">
+      <img src="${esc(p.image)}" alt="Ceinture de ${esc(p.nom)} sous vitrine, ${esc(p.lieu)}, ${esc(p.date)}" loading="lazy" width="1200" height="1200">
+    </button>`
+        : `<div class="prise-visuel prise-sans-image" aria-hidden="true">${chausses()}</div>`
+    }
     <div class="cartel cartel-refus">
       <div class="cartel-identite">
         <span class="cartel-numero">${esc(p.numero)}</span>
@@ -107,7 +108,11 @@ export const rendre = () => `
     </div>
     <ul class="vitrines vitrines-annexe">${refusees.map(vitrineRefusee).join("")}</ul>
     <p class="salle-mention">${esc(m.salleAnnexe.mention)}</p>
-  </section>`
+  </section>
+  <dialog class="visionneuse" aria-label="Pièce agrandie">
+    <button class="bouton-icone fermer" type="button" aria-label="Fermer">${icones.fermer}</button>
+    <figure><img alt=""><figcaption><strong></strong><span></span></figcaption></figure>
+  </dialog>`
       : ""
   }
 
@@ -120,4 +125,29 @@ export const rendre = () => `
 
 export const page = { cle: "musee", titre: m.titre };
 
-if (typeof document !== "undefined") monterPage({ ...page, contenu: rendre() });
+export function apres() {
+  const dialogue = document.querySelector(".visionneuse");
+  if (!dialogue) return;
+  const img = dialogue.querySelector("img");
+  let declencheur = null;
+
+  document.querySelectorAll(".prise-visuel[data-index]").forEach((b) => {
+    b.addEventListener("click", () => {
+      const p = refusees[Number(b.dataset.index)];
+      img.src = p.image;
+      img.alt = b.querySelector("img").alt;
+      dialogue.querySelector("figcaption strong").textContent = `${p.numero} · ${p.nom}`;
+      dialogue.querySelector("figcaption span").textContent = `${m.salleAnnexe.libelleMotif} : ${p.motif}`;
+      declencheur = b;
+      dialogue.showModal();
+    });
+  });
+  dialogue.querySelector(".fermer").addEventListener("click", () => dialogue.close());
+  dialogue.addEventListener("click", (e) => { if (e.target === dialogue) dialogue.close(); });
+  dialogue.addEventListener("close", () => declencheur && declencheur.focus());
+}
+
+if (typeof document !== "undefined") {
+  monterPage({ ...page, contenu: rendre() });
+  apres();
+}

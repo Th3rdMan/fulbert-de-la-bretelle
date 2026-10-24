@@ -99,7 +99,7 @@ Monsieur le Baron, mon kanard, relit tout. Il n'approuve rien.`,
       surtitre: "Salle annexe · accès par l'escalier de service",
       titre: "Prises non homologuées",
       // {N} est remplacé par le nombre de prises non homologuées, en toutes
-      // lettres (« Six », « Sept »…).
+      // lettres (« Trois », « Quatre »…).
       chapeau: "{N} chausses sont tombées sous la lame de l'Ordre ; aucune ne satisfait l'article premier du Code, qui veut qu'on ne vise que ceux qui portent un titre ou une charge. Le Conservateur refuse l'exposition. Le Chevalier conteste. Le dossier est en instance.",
       tampon: "Non homologuée",
       libelleMotif: "Motif du refus",
