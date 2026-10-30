@@ -8,7 +8,8 @@
 // moins un détail que lui seul pouvait raconter, jamais de citation de ses
 // propres chansons ou discours (le champ « chanson » fait le lien). Il se
 // contredit d'une entrée à l'autre et ne le corrige jamais. On ne garde que
-// ce qui a changé sa vie.
+// ce qui a changé sa vie. Écrire comme un barde : pas d'heures précises,
+// pas de tirets cadratins.
 //
 // Champs :
 //   id      identifiant unique, sans espace
@@ -117,30 +118,30 @@ Monsieur le Baron monte la garde sur mon oreiller et siffle dès qu'on approche.
     id: "la-destitution",
     date: "",
     titre: "« L'autre ne savait pas conter »",
-    recit: `Il se disait les mains liées, pieds et poings, et répétait qu'il ne pouvait rien tant qu'on ne lui aurait pas prêté allégeance. Je la lui ai donnée. À la Couronne, pas à l'homme, et je l'ai dit assez fort pour que nul ne s'y trompe. Treize heures vingt-six. Je voulais voir ce qu'il ferait de ses mains, une fois libres.
+    recit: `Il se disait pieds et poings liés, et jurait qu'il ne pourrait rien tant qu'on ne lui aurait pas prêté allégeance. Je la lui ai donc prêtée. À la Couronne, pas à l'homme, et je l'ai proclamé assez haut pour que nul dans la salle ne s'y trompe. Je voulais voir ce qu'il ferait de ses mains, une fois déliées.
 
-Dix-neuf heures quarante-neuf. Il m'a destitué. C'était son premier geste. Le Royaume entier a vu ce qu'il valait, et il l'a vu grâce à moi : je trouve que ma charge était donnée.
+Il s'en est servi le soir même, pour me destituer. Ce fut son premier geste de roi. Tout le Royaume a vu ce qu'il valait, et c'est moi qui tenais la chandelle : à ce prix, ma charge n'était pas chère.
 
-Ce qu'il a écrit dans son décret, en revanche, je ne l'ai pas digéré. Que l'un ne savait pas compter, et l'autre pas conter. On peut me prendre un ministère, il était prêté, je le savais. Pas ça. J'ai dû corriger ma signature moi-même, ligne par ligne, et retirer le mot Ministre de ma propre main. Personne ne vous prévient que c'est cette minute-là qui est pénible.`,
+Son décret, en revanche, je ne l'ai pas digéré. L'un, disait-il, ne savait pas compter, et l'autre ne savait pas conter. Qu'on me reprenne un ministère, soit : on me l'avait prêté, je le savais. Ma voix, jamais. J'ai dû gratter ma signature moi-même, ligne après ligne, et effacer le mot Ministre de ma propre main. Aucune ballade ne vous prévient que c'est ce moment-là, le plus long.`,
   },
   {
     id: "ordre-de-la-ceinture",
     date: "",
     titre: "L'Ordre de la Ceinture, enfin fondé",
-    recit: `Je n'ai pas dormi. Rentré au Castel Bretelle — qui n'est plus une cabane mais une maisonnette, la brique a servi — j'ai étalé mes papiers sur la table et j'ai fondé l'Ordre à zéro heure quarante-neuf. J'ai rédigé les statuts au dos de l'annonce de ma destitution. Il restait de la place.
+    recit: `Cette nuit, je n'ai pas fermé l'œil. Je suis rentré au Castel Bretelle, qui n'est plus une cabane mais une maisonnette, car la brique a fini par servir. J'ai étalé mes papiers sur la table, et avant que le coq ne se doute de rien, l'Ordre était fondé. Ses statuts tiennent au dos de l'annonce de ma destitution. Il restait de la place, et je n'aime pas le gâchis.
 
-Trois articles. On ne vise que ceux qui portent un titre ou une charge ; jamais deux fois le même adversaire dans la même journée ; on ne tue pas son public. Un musée, trois vitrines, et pas une seule pièce dedans. La salle annexe, elle, est bien fournie : elle conserve les prises refusées, c'est-à-dire presque toutes les miennes.
+Trois articles, pas un de plus. On ne vise que ceux qui portent un titre ou une charge. On ne vise jamais deux fois le même adversaire dans la même journée. On ne tue pas son public. L'Ordre a aussi son musée : trois vitrines, toutes vides. À côté, une salle annexe bien garnie, où dorment les prises refusées, c'est-à-dire presque toutes les miennes.
 
-L'Ordre existe. Il a un blason, un Code, un registre et un kanard. Il n'est reconnu de personne. Je précise cela chaque fois qu'on me le demande, et j'ajoute toujours les deux mots qui vont avec : pour l'instant.`,
+L'Ordre a un blason, un Code, un registre et un kanard. Personne ne le reconnaît. Je le précise à qui me le demande, et j'ajoute toujours les deux mots qui l'accompagnent comme un refrain : pour l'instant.`,
   },
   {
     id: "crieur-public-royal",
     date: "",
     titre: "Crieur Public Royal",
-    recit: `Wenceslas est tombé dans la nuit. Je n'ai rien fait d'héroïque : j'ai seulement raconté ce que j'entendais, et il se trouve que cela suffisait. Émile Liarr a repris sa couronne, s'est fixé zéro part du budget, et a nommé son prédécesseur Arbitre des Élégances — le seul titre que celui-ci s'attribuait sans l'avoir. Il faut savoir reconnaître l'ouvrage bien fait.
+    recit: `Wenceslas est tombé dans la nuit. Je n'ai rien fait d'héroïque : j'ai raconté ce que j'entendais, et il s'est trouvé que cela suffisait. Émile Liarr a repris sa couronne, s'est alloué zéro part du budget, et a nommé son prédécesseur Arbitre des Élégances, le seul titre que celui-ci s'attribuait sans l'avoir. Devant un ouvrage pareil, je me découvre, plume comprise.
 
-Il m'a écrit à une heure cinq pour me reprendre comme barde. J'ai démissionné de l'intendance de Crab Key à une heure huit. Trois minutes. J'avais juré à ma Reine pirate, deux jours plus tôt, que je ne repartirais plus pour une charge de passage ; je ne lui ai pas fait de nouvelle promesse, les anciennes ayant assez servi. Je lui ai laissé Monsieur le Baron, qui a refusé de quitter l'étang. C'est ce que j'avais de meilleur.
+La nuit n'était pas finie qu'il m'écrivait pour me reprendre comme barde. Trois minutes plus tard, j'avais rendu l'intendance de Crab Key. Deux jours plus tôt, j'avais juré à ma Reine pirate de ne plus partir pour une charge de passage. Je ne lui ai pas fait de nouvelle promesse, les anciennes avaient assez servi. Je lui ai laissé Monsieur le Baron, qui refusait de quitter l'étang. C'était ce que j'avais de meilleur.
 
-Quatorze heures douze : Ministre de l'Information, et Crieur Public Royal. On m'avait expliqué devant tout le Royaume que je ne savais pas conter. J'attendais surtout qu'on me le redemande.`,
+Dans l'après-midi, me voici de nouveau Ministre de l'Information, et Crieur Public Royal. On m'avait expliqué devant tout le Royaume que je ne savais pas conter. Je n'attendais qu'une chose : qu'on me redemande de le faire.`,
   },
 ];
