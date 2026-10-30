@@ -113,4 +113,34 @@ Pendant ce temps, Wenceslas a pris le trône à Émile, et l'on m'a demandé de 
 
 Monsieur le Baron monte la garde sur mon oreiller et siffle dès qu'on approche. Le médecin m'ausculte depuis le couloir. Ma soupe arrive froide, glissée sous la porte.`,
   },
+  {
+    id: "la-destitution",
+    date: "",
+    titre: "« L'autre ne savait pas conter »",
+    recit: `Il se disait les mains liées, pieds et poings, et répétait qu'il ne pouvait rien tant qu'on ne lui aurait pas prêté allégeance. Je la lui ai donnée. À la Couronne, pas à l'homme, et je l'ai dit assez fort pour que nul ne s'y trompe. Treize heures vingt-six. Je voulais voir ce qu'il ferait de ses mains, une fois libres.
+
+Dix-neuf heures quarante-neuf. Il m'a destitué. C'était son premier geste. Le Royaume entier a vu ce qu'il valait, et il l'a vu grâce à moi : je trouve que ma charge était donnée.
+
+Ce qu'il a écrit dans son décret, en revanche, je ne l'ai pas digéré. Que l'un ne savait pas compter, et l'autre pas conter. On peut me prendre un ministère, il était prêté, je le savais. Pas ça. J'ai dû corriger ma signature moi-même, ligne par ligne, et retirer le mot Ministre de ma propre main. Personne ne vous prévient que c'est cette minute-là qui est pénible.`,
+  },
+  {
+    id: "ordre-de-la-ceinture",
+    date: "",
+    titre: "L'Ordre de la Ceinture, enfin fondé",
+    recit: `Je n'ai pas dormi. Rentré au Castel Bretelle — qui n'est plus une cabane mais une maisonnette, la brique a servi — j'ai étalé mes papiers sur la table et j'ai fondé l'Ordre à zéro heure quarante-neuf. J'ai rédigé les statuts au dos de l'annonce de ma destitution. Il restait de la place.
+
+Trois articles. On ne vise que ceux qui portent un titre ou une charge ; jamais deux fois le même adversaire dans la même journée ; on ne tue pas son public. Un musée, trois vitrines, et pas une seule pièce dedans. La salle annexe, elle, est bien fournie : elle conserve les prises refusées, c'est-à-dire presque toutes les miennes.
+
+L'Ordre existe. Il a un blason, un Code, un registre et un kanard. Il n'est reconnu de personne. Je précise cela chaque fois qu'on me le demande, et j'ajoute toujours les deux mots qui vont avec : pour l'instant.`,
+  },
+  {
+    id: "crieur-public-royal",
+    date: "",
+    titre: "Crieur Public Royal",
+    recit: `Wenceslas est tombé dans la nuit. Je n'ai rien fait d'héroïque : j'ai seulement raconté ce que j'entendais, et il se trouve que cela suffisait. Émile Liarr a repris sa couronne, s'est fixé zéro part du budget, et a nommé son prédécesseur Arbitre des Élégances — le seul titre que celui-ci s'attribuait sans l'avoir. Il faut savoir reconnaître l'ouvrage bien fait.
+
+Il m'a écrit à une heure cinq pour me reprendre comme barde. J'ai démissionné de l'intendance de Crab Key à une heure huit. Trois minutes. J'avais juré à ma Reine pirate, deux jours plus tôt, que je ne repartirais plus pour une charge de passage ; je ne lui ai pas fait de nouvelle promesse, les anciennes ayant assez servi. Je lui ai laissé Monsieur le Baron, qui a refusé de quitter l'étang. C'est ce que j'avais de meilleur.
+
+Quatorze heures douze : Ministre de l'Information, et Crieur Public Royal. On m'avait expliqué devant tout le Royaume que je ne savais pas conter. J'attendais surtout qu'on me le redemande.`,
+  },
 ];

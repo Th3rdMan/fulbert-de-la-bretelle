@@ -27,6 +27,11 @@ export default [
   },
   {
     categorie: "charges",
+    titre: "Crieur Public Royal",
+    actuel: true,
+  },
+  {
+    categorie: "charges",
     titre: "Intendant de Crab Key",
     precision: "Charge quittée au bout de 6 jours",
     actuel: false,
