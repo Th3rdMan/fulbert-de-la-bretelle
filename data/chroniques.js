@@ -135,13 +135,13 @@ Trois articles, pas un de plus. On ne vise que ceux qui portent un titre ou une 
 L'Ordre a un blason, un Code, un registre et un kanard. Personne ne le reconnaît. Je le précise à qui me le demande, et j'ajoute toujours les deux mots qui l'accompagnent comme un refrain : pour l'instant.`,
   },
   {
-    id: "crieur-public-royal",
+    id: "retour-a-la-commanderie",
     date: "",
-    titre: "Crieur Public Royal",
-    recit: `Wenceslas est tombé dans la nuit. Je n'ai rien fait d'héroïque : j'ai raconté ce que j'entendais, et il s'est trouvé que cela suffisait. Émile Liarr a repris sa couronne, s'est alloué zéro part du budget, et a nommé son prédécesseur Arbitre des Élégances, le seul titre que celui-ci s'attribuait sans l'avoir. Devant un ouvrage pareil, je me découvre, plume comprise.
+    titre: "Retour à la Commanderie",
+    recit: `Wenceslas est tombé dans la nuit. Je n'ai rien fait d'héroïque : j'ai raconté ce que j'entendais, et il s'est trouvé que cela suffisait. Émile Liarr a repris sa couronne et a nommé son prédécesseur Arbitre des Élégances, le seul titre que celui-ci s'attribuait sans l'avoir. Devant un ouvrage pareil, je me découvre, plume comprise.
 
 La nuit n'était pas finie qu'il m'écrivait pour me reprendre comme barde. Trois minutes plus tard, j'avais rendu l'intendance de Crab Key. Deux jours plus tôt, j'avais juré à ma Reine pirate de ne plus partir pour une charge de passage. Je ne lui ai pas fait de nouvelle promesse, les anciennes avaient assez servi. Je lui ai laissé Monsieur le Baron, qui refusait de quitter l'étang. C'était ce que j'avais de meilleur.
 
-Dans l'après-midi, me voici de nouveau Ministre de l'Information, et Crieur Public Royal. On m'avait expliqué devant tout le Royaume que je ne savais pas conter. Je n'attendais qu'une chose : qu'on me redemande de le faire.`,
+Dans l'après-midi, j'ai repris ma charge à la Commanderie de la Musique et des Esgourdes. Me revoici Ministre de l'Information. On m'avait expliqué devant tout le Royaume que je ne savais pas conter. Je n'attendais qu'une chose : qu'on me redemande de le faire.`,
   },
 ];
