@@ -144,4 +144,15 @@ La nuit n'était pas finie qu'il m'écrivait pour me reprendre comme barde. Troi
 
 Dans l'après-midi, j'ai repris ma charge à la Commanderie de la Musique et des Esgourdes. Me revoici Ministre de l'Information. On m'avait expliqué devant tout le Royaume que je ne savais pas conter. Je n'attendais qu'une chose : qu'on me redemande de le faire.`,
   },
+  {
+    id: "les-deux-mats",
+    date: "",
+    titre: "Quatre pieds de mât",
+    chanson: "guerre-des-deux-mats",
+    recit: `J'ai décroché un drapeau à Fort Émouchet. Il était rouge, le nôtre aussi, et les deux se tenaient à six pas dans la même rue : cela ne se fait pas, voilà tout. J'ai reçu dans l'heure une lettre du Ministre de l'Économie kralandais, courtoise, qui me priait de remettre l'étendard sur son support. Je me suis excusé. J'ai proposé de repeindre le mât.
+
+Le lendemain, le Roy a fait exactement la même chose à la Capitale, et un Président y a laissé sa charge. Je ne suis donc pas fautif : j'étais en avance sur la doctrine, et seule l'échelle me séparait du génie. Je compte vivre longtemps de cette consolation.
+
+J'ai chanté la chose au pied du mât, qui était encore en réparation ; les deux charpentiers ont posé leurs outils et repris le refrain sans le connaître. Et c'est seulement en saluant que je m'en suis aperçu : Monsieur le Baron était resté dans son étang, à Crab Key. Je n'avais jamais chanté sans lui. Personne ne l'a remarqué. Moi, si.`,
+  },
 ];
