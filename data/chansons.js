@@ -245,4 +245,107 @@ L'ocarina ? Tout aussi Introuvable.
 Mais j'ai rapporté mieux : une chanson.
 Et une omelette aux champignons.`,
   },
+  {
+    id: "guerre-des-deux-mats",
+    titre: "La Guerre des Deux Mâts",
+    contexte: `Au sommet de la Capitale, le Roy Emile et le Président Golgoth se sont disputé un mât. L'un hissait le lys, l'autre l'arrachait, et ainsi de suite pendant des heures, devant deux armées qui n'ont pas eu à dégainer. Le Roy a fini par glisser sous la main de son adversaire le drapeau d'une autre nation. Golgoth l'a hissé sans regarder. Ses propres officiers l'ont déshabillé sur place.
+
+Je précise, parce qu'on finira par me le reprocher, que j'avais moi-même changé un drapeau de support quelques jours plus tôt, à Fort Émouchet, pour des raisons strictement décoratives. Je n'ai renversé aucun chef d'État. J'ai reçu une lettre fort courtoise du Ministre de l'Économie kralandais. L'échelle fait tout.
+
+Je l'ai chantée au pied du mât, qui était encore en réparation. Les deux charpentiers ont posé leurs outils et repris le refrain sans le connaître. Et si l'on ne devait retenir qu'une chose de cette journée, ce ne sont pas les mâts : pendant la farce, Sir Sysson et Sœur Felony reprenaient le Duché de la Capitale. C'est pour eux qu'il y a un dernier couplet.`,
+    dedicataire: "Les charpentiers de la Capitale, seuls vainqueurs de cette guerre",
+    style: "Chanson à boire, gigue de taverne",
+    sunoId: "aae148d7-aa47-4d47-aafd-2165dd602e32",
+    lien: "https://suno.com/s/njjuw07Xm9sdk9J8",
+    paroles: `[Refrain]
+Hisse le mât ! Baisse le mât !
+Hisse ta chope, ne la baisse pas !
+Deux grands poteaux, deux grands nigauds,
+Deux beaux drapeaux, pas un couteau,
+Et la Ruthvénie boit à nouveau !
+
+Golgoth montait son étendard,
+Emile arrivait en retard.
+L'un a dit : cette terre est à moi !
+L'autre a dit : n'y compte pas, ma foi !
+
+[Refrain]
+Hisse le mât ! Baisse le mât !
+Hisse ta chope, ne la baisse pas !
+Deux grands poteaux, deux grands nigauds,
+Deux beaux drapeaux, pas un couteau,
+Ça promet un joli numéro !
+
+Ils se sont battus tout un jour
+Sans une lame, sans un tambour.
+L'un qui montait, l'autre ôtait,
+Et c'est le mât qui a saigné !
+
+[Refrain]
+Hisse le mât ! Baisse le mât !
+Hisse ta chope, ne la baisse pas !
+Deux grands poteaux, deux grands nigauds,
+Deux beaux drapeaux, pas un couteau,
+Un charpentier et un escabeau !
+
+C'était un mât de cocagne
+Sans jambon ni champagne.
+En haut : ni prix, ni saucisson,
+Rien qu'un drapeau comme seul pompon !
+
+[Refrain]
+Hisse le mât ! Baisse le mât !
+Hisse ta chope, ne la baisse pas !
+Deux grands poteaux, deux grands nigauds,
+Deux beaux drapeaux, pas un couteau,
+Et pas une miette à manger, là-haut !
+
+Le Roy Emile, discret, lui glissa
+Le drapeau rouge d'un autre État.
+Golgoth l'a hissé trop vite, et voilà
+Un président dans de beaux draps !
+
+[Refrain]
+Hisse le mât ! Baisse le mât !
+Hisse ta chope, ne la baisse pas !
+Deux grands poteaux, deux grands nigauds,
+Deux beaux drapeaux, pas un couteau,
+Deux hommes, deux mâts, un seul cerveau !
+
+Son armée a levé le nez,
+Son armée s'est vue trompée,
+On l'a prié de s'en aller :
+Il voulait planter, il s'est planté !
+
+[Refrain]
+Hisse le mât ! Baisse le mât !
+Hisse ta chope, ne la baisse pas !
+Deux grands poteaux, deux grands nigauds,
+Deux beaux drapeaux, pas un couteau,
+Président planté comme un poireau !
+
+Il avait tant grimpé la hampe
+Qu'il en gardera une crampe,
+Et il redescendit du château
+Sans présidence et sans drapeau.
+
+[Refrain]
+Hisse le mât ! Baisse le mât !
+Hisse ta chope, ne la baisse pas !
+Deux grands poteaux, deux grands nigauds,
+Deux beaux drapeaux, pas un couteau,
+Et les vrais héros n'étaient pas en haut !
+
+Et pendant qu'on jouait du poteau,
+Deux Chevaliers, loin du château,
+Reprenaient un Duché entier :
+Buvez pour eux, et sans compter !
+
+[Refrain]
+Hisse le mât ! Baisse le mât !
+Hisse ta chope, ne la baisse pas !
+Deux grands poteaux, deux grands nigauds,
+Deux beaux drapeaux, pas un couteau,
+Et la Ruthvénie boit à nouveau !`,
+  },
 ];
