@@ -643,6 +643,33 @@ main { display: block; padding-block: clamp(2rem, 5vw, 4.5rem) clamp(3rem, 7vw, 
 .code h3 { font-size: .78rem; letter-spacing: .2em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 .3rem; }
 .code p { margin: 0; font-size: 1.15em; }
 
+.rangs {
+  list-style: none; margin: 0; padding: 0;
+}
+.rangs li {
+  display: grid; grid-template-columns: 3rem minmax(0, 1fr); gap: 1rem; align-items: start;
+  padding: 1rem 0; border-bottom: 1px solid var(--rule);
+}
+.rang-numero {
+  font-family: var(--f-titre); font-size: 1.6rem; line-height: 1; color: var(--or-texte);
+  text-align: center; padding-top: .1rem;
+}
+.rangs h3 { margin: 0; font-family: var(--f-titre); font-weight: 600; font-size: 1.05rem; letter-spacing: .03em; }
+.rangs p { margin: .3rem 0 0; max-width: 44rem; }
+.rang-condition { font-style: italic; color: var(--ink-soft); }
+.hors-rangs {
+  list-style: none; margin: clamp(1.75rem, 4vw, 2.5rem) 0 0; padding: 0;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap: 1.25rem;
+}
+.hors-rangs li {
+  border: 1px dashed var(--or); padding: 1rem 1.2rem 1.1rem; background: var(--surface);
+}
+.hors-rangs h3 { margin: 0; font-family: var(--f-titre); font-weight: 600; font-size: 1rem; letter-spacing: .03em; }
+.hors-rangs p { margin: .3rem 0 0; }
+.hors-rangs-nature {
+  font-family: var(--f-titre); font-size: .66rem; letter-spacing: .16em; text-transform: uppercase; color: var(--or-texte);
+}
+
 .membres { width: 100%; border-collapse: collapse; }
 .membres th, .membres td { text-align: left; padding: .85rem .75rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
 .membres th { font-family: var(--f-titre); font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-soft); font-weight: 600; }

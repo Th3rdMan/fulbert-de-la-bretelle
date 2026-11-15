@@ -55,7 +55,7 @@ export default [
   {
     categorie: "appartenances",
     titre: "Fondateur de l'Ordre de la Ceinture",
-    precision: "Non reconnu officiellement, pour l'instant",
+    precision: "Fondé, enregistré, et toujours pas reconnu par la Couronne (pour l'instant)",
     actuel: true,
   },
   {

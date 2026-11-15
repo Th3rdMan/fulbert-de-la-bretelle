@@ -1,10 +1,17 @@
 import { monterPage, site, esc, avisBaron, avecLettrine } from "../app.js";
 import { filet, fleuron } from "../ornements.js";
 import membres from "../../../data/membres-ordre.js";
+import rangs, { horsRangs } from "../../../data/rangs.js";
 import ceintures from "../../../data/ceintures.js";
 
 const o = site.ordre;
 const total = ceintures.length;
+
+const nomRang = (m) => {
+  const r = rangs.find((x) => x.numero === m.rang);
+  return r ? (m.feminin ? r.feminin : r.nom) : "";
+};
+const formes = (r) => (r.feminin && r.feminin !== r.nom ? `${r.nom} · ${r.feminin}` : r.nom);
 
 export const rendre = () => `
 <div class="conteneur">
@@ -31,6 +38,36 @@ export const rendre = () => `
     </ol>
   </section>
 
+  <section class="section apparait" aria-labelledby="titre-rangs">
+    <div class="titre-section">${fleuron()}<h2 id="titre-rangs">Les Rangs</h2></div>
+    <ol class="rangs" reversed>
+      ${[...rangs]
+        .reverse()
+        .map(
+          (r) => `<li>
+        <span class="rang-numero" aria-hidden="true">${esc(String(r.numero))}</span>
+        <div>
+          <h3>${esc(formes(r))}</h3>
+          <p class="rang-condition">${esc(r.condition)}</p>
+          ${r.pouvoir ? `<p>${esc(r.pouvoir)}</p>` : ""}
+        </div>
+      </li>`
+        )
+        .join("")}
+    </ol>
+    <ul class="hors-rangs">
+      ${horsRangs
+        .map(
+          (h) => `<li>
+        <h3>${esc(h.nom)}</h3>
+        <p class="hors-rangs-nature">${esc(h.nature)}</p>
+        <p>${esc(h.texte)}</p>
+      </li>`
+        )
+        .join("")}
+    </ul>
+  </section>
+
   <div class="deux-colonnes section">
     <section class="apparait" aria-labelledby="titre-membres">
       <div class="titre-section">${fleuron()}<h2 id="titre-membres">Les Membres</h2></div>
@@ -40,7 +77,7 @@ export const rendre = () => `
           <thead><tr><th scope="col">Nom</th><th scope="col">Rang</th><th scope="col">Depuis</th></tr></thead>
           <tbody>
             ${membres
-              .map((m) => `<tr><td>${esc(m.nom)}</td><td>${esc(m.rang)}</td><td>${esc(m.depuis || "")}</td></tr>`)
+              .map((m) => `<tr><td>${esc(m.nom)}</td><td>${esc(nomRang(m))}</td><td>${esc(m.depuis || "")}</td></tr>`)
               .join("")}
           </tbody>
         </table>

@@ -16,7 +16,7 @@ export default [
     id: "blason",
     src: "https://i.ibb.co/XZZqKWYY/blason-culotte-512.png",
     titre: "Blason de l'Ordre de la Ceinture",
-    legende: "Les armes de l'Ordre, en attente de reconnaissance officielle.",
+    legende: "Les armes de l'Ordre, toujours pas reconnues par la Couronne (pour l'instant).",
     alt: "Blason de l'Ordre de la Ceinture.",
   },
   {

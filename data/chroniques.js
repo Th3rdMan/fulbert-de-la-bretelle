@@ -155,4 +155,16 @@ Le lendemain, le Roy a fait exactement la même chose à la Capitale, et un Pré
 
 J'ai chanté la chose au pied du mât, qui était encore en réparation ; les deux charpentiers ont posé leurs outils et repris le refrain sans le connaître. Et c'est seulement en saluant que je m'en suis aperçu : Monsieur le Baron était resté dans son étang, à Crab Key. Je n'avais jamais chanté sans lui. Personne ne l'a remarqué. Moi, si.`,
   },
+  {
+    id: "voyage-avorte",
+    date: "",
+    titre: "Le voyage avorté",
+    recit: `On annonçait une quête au Dendromonde. J'avais prévu d'y aller sans armure, puisque c'est ma manière, et avec de quoi écrire le récit sur place. La politique en a décidé autrement : la quête a été repoussée, puis oubliée, comme tout ce qui n'explose pas dans l'heure.
+
+Je n'en ai rien su à temps, parce que j'étais déjà en chemin. À Milieu, il y avait une tente ; il y avait aussi mes pieds. C'est la tente qui a cédé. La police y a vu un crime politique, et j'ai jugé plus élégant de me livrer moi-même en arrivant plutôt que d'attendre qu'on vienne me chercher. J'ai donc fait de la prison pour une toile et trois piquets, et j'y ai perdu ma charge de ministre. Cela me faisait deux ministères perdus : le premier parce qu'un roi estimait que je ne savais pas conter, le second à cause d'un piquet. Je préfère de loin le second : au moins, c'est vrai.
+
+Sorti de cellule et n'ayant plus rien à faire d'un donjon annulé, j'ai poussé jusqu'en Mystisie. J'y ai bu de l'alcool de cactus, rencontré des musiciens qui n'ont pas nos manières, et subi une tentative de conversion dont je suis revenu très vite et avec une mèche roussie : l'Esprit Boulet a son mot à dire sur ces choses-là, et il le dit par en haut. Je suis rentré quelques jours plus tard. Le Roy m'a rendu ma charge sans que j'aie rien demandé, ce qui est la manière habituelle dont ces choses m'arrivent.
+
+Du Dendromonde, je n'ai vu que la route.`,
+  },
 ];

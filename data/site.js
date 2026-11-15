@@ -125,7 +125,7 @@ Monsieur le Baron, mon kanard, relit tout. Il n'approuve rien.`,
   ordre: {
     nom: "L'Ordre de la Ceinture",
     blason: "https://i.ibb.co/XZZqKWYY/blason-culotte-512.png",
-    statut: "Non reconnu officiellement (pour l'instant)",
+    statut: "Fondé, enregistré, et toujours pas reconnu par la Couronne (pour l'instant)",
     charte: `L'Ordre de la Ceinture est un ordre de chevalerie fondé par Fulbert de la Bretelle, à Port Magmor, en Crab Key.
 
 Il a pour objet la confiscation des ceintures des puissants, par l'escrime et dans les règles. Une ceinture confisquée n'est ni vendue ni portée en public par un autre que son vainqueur : elle est exposée au Musée de la Ceinture, avec le nom de son ancien propriétaire, afin que nul n'oublie qui l'a perdue.

@@ -348,4 +348,76 @@ Deux grands poteaux, deux grands nigauds,
 Deux beaux drapeaux, pas un couteau,
 Et la Ruthvénie boit à nouveau !`,
   },
+  {
+    id: "trois-noms",
+    titre: "Trois Noms",
+    contexte: `Le Roy m'a rendu ma charge et, pour premier ouvrage, m'a demandé de chanter trois de ses chevaliers. J'ai lu tout ce que le Royaume dit d'eux avant d'écrire une ligne, et j'ai trouvé peu de chose : nos récits de bataille ne nomment jamais personne, ils disent « nos vaillants Chevaliers » et passent au banquet. C'est précisément le défaut qu'un barde est là pour réparer.
+
+Dame Mélisende a quitté sa maison pour qu'on raconte sa saga ; elle a rendu l'épée un jour, blessée, et l'a reprise le lendemain. Messire Uther a juré croisade, a servi longtemps comme sergent sans que personne le remarque, et a connu la cellule avant les honneurs. Dame Felony a porté la couronne, mené l'armée, grimpé la Termitière jusqu'au sommet, repris la Capitale, et sert encore aujourd'hui sans rien réclamer.
+
+Ce n'est pas une chanson à boire. Je l'ai écrite pour qu'on puisse la chanter en marchant, et je l'ai donnée pour la première fois à Fort Émouchet, devant des hommes de la levée qui mangeaient sans se parler. Au premier refrain, deux cuillères se sont arrêtées. À la fin, ils étaient debout. Aucun des trois n'était dans la salle, et c'était mieux ainsi : ce soir-là, ce n'étaient pas eux qui avaient besoin de l'entendre.`,
+    dedicataire: "Mélisende de Clairval, Uther de la Valette, Felony",
+    style: "Ballade de marche, chant de soldats",
+    sunoId: "53439177-9096-460d-9d7c-458a765063bf",
+    lien: "https://suno.com/s/JoS2hLR7EzID4Vm3",
+    paroles: `[Refrain]
+Sonnez trompettes, sonnez tocsin !
+Trois noms portés jusqu'au matin !
+Mélisende ! Uther ! Felony !
+Debout, Ruthvènes, la nuit finit !
+
+Elle a quitté maison et nom
+Pour qu'on lui fasse une chanson.
+Devant elle, des rangs serrés
+De visages tous répétés.
+Elle a hurlé sur ses soldats
+Jusqu'à les redresser d'un pas.
+Blessée, elle entrait en légende ;
+
+Au matin, debout ! MÉLISENDE !
+
+[Refrain]
+Sonnez trompettes, sonnez tocsin !
+Trois noms portés jusqu'au matin !
+Mélisende ! Uther ! Felony !
+Debout, Ruthvènes, la nuit finit !
+
+Adoubé jeune par un baron,
+Il a juré sans condition
+De poursuivre le mal en tout lieu,
+Dans les caves comme dans les cieux.
+Sergent longtemps, jamais pressé,
+Il servait sans être annoncé.
+Il a connu la paille et le fer ;
+
+Il en ressort debout ! UTHER !
+
+[Refrain]
+Sonnez trompettes, sonnez tocsin !
+Trois noms portés jusqu'au matin !
+Mélisende ! Uther ! Felony !
+Debout, Ruthvènes, la nuit finit !
+
+Elle a porté couronne un temps,
+Elle a mené l'armée longtemps.
+Elle a grimpé la Termitière
+Jusqu'au sommet, où l'air se resserre.
+Elle a repris la Capitale,
+Debout jusqu'à l'heure finale.
+Les rois s'en vont, les reines aussi ;
+
+Celle-là sert encore ! FELONY !
+
+[Pont]
+Ils avaient le nombre et l'acier,
+Nous n'avions que trois noms à crier.
+Criez-les fort, et c'est fini :
+MÉLISENDE ! UTHER ! FELONY !
+
+[Refrain]
+Sonnez trompettes, sonnez tocsin !
+Trois noms portés jusqu'au matin !
+Mélisende ! Uther ! Felony !
+Debout, Ruthvènes, la nuit finit !`,
+  },
 ];
