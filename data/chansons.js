@@ -427,7 +427,7 @@ Debout, Ruthvènes, la nuit finit !`,
 
 Il faut avoir vu ce pays ces dernières semaines pour comprendre la chanson. Un président y a perdu sa charge pour avoir hissé le mauvais drapeau. On y a donné une province comme on offre un bouquet, et repris une ville le lendemain. Chaque saison apporte un nouveau maître, et le peuple finit par ne plus savoir chez qui il habite. Dame Précieuse Liarr parle de justice, de droit, et d'un peuple qui choisit sa voie. C'est peu de chose, et c'est exactement ce qui leur manque.
 
-Je l'ai chantée chez moi, à La Boucle qui Chante de Tribunal Cybermondial, le lendemain de l'ouverture : je ne chante pas sur la place publique d'un pays qui n'est pas le mien. Dans mes propres murs, en revanche, je chante ce que je veux. La salle a repris le refrain sans qu'on le lui demande, ce qui est le seul sondage auquel j'accorde du crédit.`,
+Je l'ai chantée chez moi, à La Boucle qui Chante de Tribunal Cybermondial, le lendemain de l'ouverture : je ne chante pas sur la place publique d'un pays qui n'est pas le mien. Dans mes propres murs, en revanche, je chante ce que je veux. La salle a repris le refrain sans qu'on le lui demande, ce qui est le seul sondage auquel j'accorde du crédit. Il avait raison : elle a été élue haut la main.`,
     dedicataire: "Précieuse Liarr, candidate à la présidence de la Confédération Libre",
     style: "Chant de campagne, marche de rue",
     sunoId: "a9480623-d66a-4e2d-8e0b-d3a189b9e56b",
