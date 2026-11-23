@@ -420,4 +420,67 @@ Trois noms portés jusqu'au matin !
 Mélisende ! Uther ! Felony !
 Debout, Ruthvènes, la nuit finit !`,
   },
+  {
+    id: "precieuse",
+    titre: "Précieuse",
+    contexte: `La Confédération Libre élit son président. J'y suis étranger, je n'y vote pas, et personne ne m'avait rien demandé ; mais j'ai écouté ce que les candidats promettaient, et j'ai écrit sur la seule qui ne promette pas d'incendie.
+
+Il faut avoir vu ce pays ces dernières semaines pour comprendre la chanson. Un président y a perdu sa charge pour avoir hissé le mauvais drapeau. On y a donné une province comme on offre un bouquet, et repris une ville le lendemain. Chaque saison apporte un nouveau maître, et le peuple finit par ne plus savoir chez qui il habite. Dame Précieuse Liarr parle de justice, de droit, et d'un peuple qui choisit sa voie. C'est peu de chose, et c'est exactement ce qui leur manque.
+
+Je l'ai chantée chez moi, à La Boucle qui Chante, le lendemain de l'ouverture : je ne chante pas sur la place publique d'un pays qui n'est pas le mien. Dans ma propre maison, en revanche, je chante ce que je veux. La salle a repris le refrain sans qu'on le lui demande, ce qui est le seul sondage auquel j'accorde du crédit.`,
+    dedicataire: "Précieuse Liarr, candidate à la présidence de la Confédération Libre",
+    style: "Chant de campagne, marche de rue",
+    sunoId: "a9480623-d66a-4e2d-8e0b-d3a189b9e56b",
+    lien: "https://suno.com/s/71WgcPiHMNl7Kovd",
+    paroles: `[Refrain]
+Précieuse, Précieuse !
+Une main ferme et sérieuse !
+Des lois, des toits, des murs certains,
+Et le même drapeau demain !
+
+On a vu là-bas des présidents
+Tomber pour un drapeau au vent.
+On a vu donner des provinces
+Comme on offre un bouquet de prince.
+Chaque saison, un nouveau maître,
+Chaque matin, une autre fenêtre.
+Un peuple n'est pas un jouet :
+Il veut savoir chez qui il est.
+
+[Refrain]
+Précieuse, Précieuse !
+Une main ferme et sérieuse !
+Des lois, des toits, des murs certains,
+Et le même drapeau demain !
+
+Elle ne promet pas la lune,
+Ni la gloire, ni la fortune.
+Elle parle de justice et de droit,
+Et d'un peuple qui choisit sa voie.
+Pas d'incendie, pas de vengeance :
+Des urnes et de la patience.
+Ce n'est pas un rêve, c'est vrai :
+C'est seulement ce qu'on attendait.
+
+[Refrain]
+Précieuse, Précieuse !
+Une main ferme et sérieuse !
+Des lois, des toits, des murs certains,
+Et le même drapeau demain !
+
+Confédérés, voilà le jour :
+On ne vote pas pour l'amour,
+Ni pour le plus grand des discours —
+On vote pour ce qui tient toujours.
+Vous cherchez une main sérieuse,
+Patiente, sobre et courageuse ?
+Elle ne s'est jamais faite peureuse,
+Et son nom le dit — Précieuse !
+
+[Refrain]
+Précieuse, Précieuse !
+Une main ferme et sérieuse !
+Des lois, des toits, des murs certains,
+Et le même drapeau demain !`,
+  },
 ];

@@ -167,4 +167,19 @@ Sorti de cellule et n'ayant plus rien à faire d'un donjon annulé, j'ai poussé
 
 Du Dendromonde, je n'ai vu que la route.`,
   },
+  {
+    id: "la-boucle-qui-chante",
+    date: "",
+    titre: "La Boucle qui Chante",
+    chanson: "precieuse",
+    recit: `J'ai ouvert une maison. Pas un castel, pas un musée : un bar, avec des tables, des tonneaux et une porte qui bat. Elle s'appelle La Boucle qui Chante et elle est à Tribunal Cybermondial, dans Acropole, c'est-à-dire chez les autres.
+
+L'enseigne est un panneau de bois craquelé où l'on a peint une ceinture bouclée en cercle parfait. Sous le cercle, la devise de la maison : la boucle lâche, le refrain tient. Les gens de passage croient d'abord à une boutique de cuir. Ils entrent pour demander, et ils restent, ce qui était exactement le calcul.
+
+Ce n'est pas la dernière. J'en ouvrirai d'autres, sous le même nom et la même enseigne, dans toutes les villes où l'on me supporte une nuit entière. Un ordre qu'on ne reconnaît pas, un musée qui ne contient rien : il me manquait un endroit où les gens viennent d'eux-mêmes.
+
+Le lendemain de l'ouverture, j'y ai chanté pour une candidate étrangère. Sir Bémol a jugé que j'arrondissais. C'est la raison pour laquelle je l'ai engagé.`,
+    image: "assets/img/boucle-qui-chante.jpg",
+    legende: "L'enseigne de La Boucle qui Chante, à Tribunal Cybermondial.",
+  },
 ];
