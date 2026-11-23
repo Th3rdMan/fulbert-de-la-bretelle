@@ -50,6 +50,7 @@ export const rendre = () => `
             ? `<div class="lecteur">
           <iframe src="https://suno.com/embed/${encodeURIComponent(c.sunoId)}" title="Lecteur Suno : ${esc(c.titre)}"
             loading="lazy" allow="autoplay; encrypted-media"></iframe>
+          ${c.lien ? `<p class="lecteur-lien"><a class="lien-fleche" href="${esc(c.lien)}" target="_blank" rel="noopener">Écouter sur Suno</a></p>` : ""}
         </div>`
             : c.lien
               ? `<p class="lecteur"><a class="lien-fleche" href="${esc(c.lien)}" target="_blank" rel="noopener">Écouter sur Suno</a></p>`

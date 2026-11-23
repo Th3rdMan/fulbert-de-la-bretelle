@@ -172,11 +172,9 @@ Du Dendromonde, je n'ai vu que la route.`,
     date: "",
     titre: "La Boucle qui Chante",
     chanson: "precieuse",
-    recit: `J'ai ouvert un bar. Pas un castel, pas un musée : un bar, avec des tables, des tonneaux et une porte qui bat. Il s'appelle La Boucle qui Chante, et celui-ci est à Tribunal Cybermondial, dans Acropole, c'est-à-dire chez les autres.
+    recit: `J'ai ouvert un bar. Pas un castel, pas un musée : un bar, avec des tables, des tonneaux et une porte qui bat. Il s'appelle La Boucle qui Chante, et celui-ci est à Tribunal Cybermondial, dans Acropole, c'est-à-dire chez les autres. Ce n'est pas le dernier : j'en ouvrirai d'autres, sous le même nom et la même enseigne, dans toutes les villes où l'on me supporte une nuit entière, et cela fera une chaîne de Boucles d'un bout à l'autre du monde. Un ordre qu'on ne reconnaît pas, un musée qui ne contient rien : il me manquait un endroit où les gens viennent d'eux-mêmes.
 
 L'enseigne est un panneau de bois craquelé où l'on a peint une ceinture bouclée en cercle parfait, tendue de cordes comme une lyre. La devise n'y figure pas : la boucle lâche, le refrain tient. Une devise qu'on lit s'oublie ; une devise qu'on répète reste. Les gens de passage croient d'abord à une boutique de cuir. Ils entrent pour demander, et ils restent, ce qui était exactement le calcul.
-
-Ce n'est pas le dernier. J'en ouvrirai d'autres, sous le même nom et la même enseigne, dans toutes les villes où l'on me supporte une nuit entière : une chaîne de Boucles, d'un bout à l'autre du monde. Un ordre qu'on ne reconnaît pas, un musée qui ne contient rien : il me manquait un endroit où les gens viennent d'eux-mêmes.
 
 Le lendemain de l'ouverture, j'y ai chanté pour une candidate étrangère. Sir Bémol a jugé que j'arrondissais. C'est la raison pour laquelle je l'ai engagé.`,
     image: "assets/img/boucle-qui-chante.jpg",
