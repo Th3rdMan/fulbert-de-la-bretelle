@@ -176,7 +176,7 @@ Du Dendromonde, je n'ai vu que la route.`,
 
 L'enseigne est un panneau de bois craquelé où l'on a peint une ceinture bouclée en cercle parfait, tendue de cordes comme une lyre. La devise n'y figure pas : la boucle lâche, le refrain tient. Une devise qu'on lit s'oublie ; une devise qu'on répète reste. Les gens de passage croient d'abord à une boutique de cuir. Ils entrent pour demander, et ils restent, ce qui était exactement le calcul.
 
-Le lendemain de l'ouverture, j'y ai chanté pour une candidate étrangère. Sir Bémol a jugé que j'arrondissais. C'est la raison pour laquelle je l'ai engagé.`,
+Le lendemain de l'ouverture, j'y ai chanté pour une candidate étrangère.`,
     image: "assets/img/boucle-qui-chante.jpg",
     legende: "L'enseigne de La Boucle qui Chante, à Tribunal Cybermondial.",
   },
